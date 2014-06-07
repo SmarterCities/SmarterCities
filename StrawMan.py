@@ -18,20 +18,42 @@ def request():
     number of 311 calls with agent_name=NYPD. The framework 
     will make the API call for us.
     """
-    return json.dumps({"sliders":[{"data":"311", 
-                                   "keys":["agency_name"],
-                                   "values":["NYPD"],
-                                   "process":"count",
-                                   "min":0,
-                                   "max":20,
-                                   "name":"NYPD calls"}, 
-                                  {"data":"311",
-                                   "keys":["agency_name"],
-                                   "values":["TLC"],
-                                   "process":"count",
-                                   "min":0,
-                                   "max":50,
-                                   "name":"TLC calls"}],
+#    return json.dumps({"sliders":[{"data":"311", 
+#                                   "keys":["agency_name"],
+#                                   "values":["NYPD"],
+#                                   "process":"count",
+#                                   "min":0,
+#                                   "max":20,
+#                                   "name":"NYPD calls"}, 
+#                                  {"data":"311",
+#                                   "keys":["agency_name"],
+#                                   "values":["TLC"],
+#                                   "process":"count",
+#                                   "min":0,
+#                                   "max":50,
+#                                   "name":"TLC calls"}],
+#                        "buttons":[] })
+    return json.dumps({"sliders":[{"min":0,
+                                   "max":100,
+                                   "name":"AMI 1",
+                                   "value":10},
+                                  {"min":0,
+                                   "max":100,
+                                   "name":"AMI 2",
+                                   "value":15},
+                                  {"min":0,
+                                   "max":100,
+                                   "name":"AMI 3",
+                                   "value":15},
+                                   {"min":0,
+                                   "max":100,
+                                   "name":"AMI 4",
+                                   "value":15},
+                                   {"min":0,
+                                   "max":100,
+                                   "name":"AMI 5",
+                                   "value":15},
+                                   ],
                         "buttons":[] })
     
 def work(data):
@@ -41,15 +63,37 @@ def work(data):
     10 weeks.
     """
     try:
-        m = float(data[0])
-        b = float(data[1])
-        graph = {}
-        graph["x"] = map(str, range(10))
-        graph["y"] = [str(m*x + b) for x in range(10)]
-        graph["title"] = "Projected 311 calls to NYPD"
-        graph["xlabel"] = "Weeks"
-        graph["ylabel"] = "Number of Calls"
-        return json.dumps([graph])
+        if len(data) != 5:
+            raise Exception, data
+        
+        data = map(float,data)
+        slope = sum(data)
+        
+        #Tax Revenue
+        graph1 = {}
+        graph1["x"] = map(str, range(10))
+        graph1["y"] = [str(slope*x) for x in range(10)]
+        graph1["title"] = ''
+        graph1["xlabel"] = ''
+        graph1["ylabel"] = ''
+        
+        #Cost of services
+        graph2 = {}
+        graph2["x"] = map(str, range(10))
+        graph2["y"] = [str((-slope*x)+slope) for x in range(10)]
+        graph2["title"] = ''
+        graph2["xlabel"] = ''
+        graph2["ylabel"] = ''
+        
+        #Amount of Debt
+        graph3 = {}
+        graph3["x"] = map(str, range(10))
+        graph3["y"] = [str(x+slope) for x in range(10)]
+        graph3["title"] = 'Effects'
+        graph3["xlabel"] = 'Years'
+        graph3["ylabel"] = 'Dollars'        
+        
+        return json.dumps([graph1, graph2, graph3])
     except ValueError:
         print 'data provided not a float'
 

@@ -23,6 +23,7 @@ import tkMessageBox
 import time
 import Framework
 import json
+import os
 
 class gui (Frame):
 
@@ -31,8 +32,9 @@ class gui (Frame):
         master.title="SmarterCities"
         self.pack()
         
-        self.file_for = {'Affordable':'StrawMan.py','311 Calls':'StrawMan.py'}  # this can be a pickled list of known models
-        self.known_data_sets = {'311':'http://data.cityofnewyork.us/resource/erm2-nwe9.json?'}
+        self.file_for = {'311Calls':'StrawMan.py','Affordable':'StrawMan.py'}  # this can be a pickled list of known models
+        self.known_data_sets = {'311':'http://data.cityofnewyork.us/resource/erm2-nwe9.json?',
+                                'NYCCrimeData':'http://nycdata.pediacities.com/api/action/datastore_search?resource_id=345736e9-a37f-44a7-b4fe-4f564b37f3f0&'}
         self.control_variables = {}
         self.buttons = {}
 
@@ -54,6 +56,7 @@ class gui (Frame):
         
     def make_panel_for(self, model):
         """Create a panel for the parameter inputs for the *model*"""
+        print "make panel for",model,"called"
         new_frame = Frame(root, bd=5, bg='white', relief=GROOVE)
         
         objects = Framework.input_(self.file_for[model])
@@ -81,11 +84,11 @@ class gui (Frame):
         """ Run *model* with parameters in the control variables"""
         parameters = [str(v.get()) for v in self.control_variables[model]]
         graphs = Framework.output(self.file_for[model], parameters)
+        #graphs = 'python Framework.py {0} output {1}'.format(model_file, " ".join(parameters)).read().strip()        
         graphs = json.loads(graphs)
         try:
             import matplotlib.pyplot as plt
             for graph in graphs:
-                plt.figure()
                 plt.plot(map(float,graph['x']), map(float, graph['y']))
                 plt.xlabel(graph['xlabel'])
                 plt.ylabel(graph['ylabel'])
@@ -95,7 +98,7 @@ class gui (Frame):
                 new_frame = Frame(root, bd=5, bg='white', relief=GROOVE)
                 Label(new_frame, text=graph["title"], bg='white', justify=LEFT).pack(side=TOP, anchor='w')
                 Label(new_frame, text="parameters:" + " ".join(parameters), bg='white', justify=LEFT).pack(side=TOP, anchor='w')
-                Label(new_frame, text=str(graph["values"]), bg='white').pack(side=TOP)
+                Label(new_frame, text=str(graph["y"]), bg='white').pack(side=TOP)
                 new_frame.pack(side=TOP, fill=BOTH, padx=10, pady=10)
                 
 root = Tk()

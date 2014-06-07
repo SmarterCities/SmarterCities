@@ -27,19 +27,21 @@ def input_(model_file):
     objects["sliders"] = []
     for slider in inputs["sliders"]:
         #build api query
-        query = known_data_sets[slider["data"]]
-        for i in range(len(slider["keys"])):
-            query+=slider["keys"][i]+'='+slider["values"][i]+'&'
-
-        #make query
-        request = urllib2.Request(query)
-        response = urllib2.urlopen(request)
-        read = response.read()
-        dictionary = json.loads(read)
-        
-        #process for function and add slider
-        value = process(slider["process"],dictionary)
-        slider["value"] = value
+        if "data" in slider:
+            print "slider data", slider["data"]
+            query = known_data_sets[slider["data"]]
+            for i in range(len(slider["keys"])):
+                query+=slider["keys"][i]+'='+slider["values"][i]+'&'
+    
+            #make query
+            request = urllib2.Request(query)
+            response = urllib2.urlopen(request)
+            read = response.read()
+            dictionary = json.loads(read)
+            
+            #process for function and add slider
+            value = process(slider["process"],dictionary)
+            slider["value"] = value
         
         objects["sliders"].append(slider)
 
@@ -65,8 +67,7 @@ def output(model_file, data):
     #7. give data back to gui
     return output
 
-
-known_models = {'Affordable':'StrawMan.py','311 Calls':'StrawMan.py'}   # this can be a pickled list of known bobs
+known_models = {'Affordable':'StrawMan.py','311Calls':'StrawMan.py'}   # this can be a pickled list of known bobs
 known_data_sets = {'311':'http://data.cityofnewyork.us/resource/erm2-nwe9.json?'}
 if __name__ == '__main__':
     try:    
