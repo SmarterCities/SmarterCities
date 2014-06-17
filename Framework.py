@@ -17,7 +17,10 @@ import urllib2
 
 def input_(model_file):
     #2. request data needs from bob
-    model_response = os.popen('python {0} request'.format(model_file)).read().strip()
+    cmd = 'python {0} request'.format(model_file)
+    #print "version", sys.version
+    #print "FRAMEWORK INPUT CALLED CMD:",cmd
+    model_response = os.popen(cmd).read().strip()
     inputs = json.loads(model_response)
     
     #3. Build objects dictionary for data
@@ -62,24 +65,19 @@ def process(function, dictionary):
 def output(model_file, data):
     #6. run model with data
     cmd = 'python {0} work {1}'.format(model_file, ' '.join(data))
+    print "output cmd:",cmd
     output = os.popen(cmd).read().strip()
-
+    print "returned output:", output
     #7. give data back to gui
     return output
 
-known_models = {'Affordable':'StrawMan.py','311Calls':'StrawMan.py'}   # this can be a pickled list of known bobs
 known_data_sets = {'311':'http://data.cityofnewyork.us/resource/erm2-nwe9.json?'}
 if __name__ == '__main__':
     try:    
-        model = sys.argv[1]  # the bob that the user wants to use
+        model_file = sys.argv[1]  # the bob that the user wants to use
         action = sys.argv[2]
     except IndexError:
         sys.exit('IndexError: Not enough input provided')
-
-    #check that model is familiar
-    if model not in known_models:
-        sys.exit(1,model,'is not a known model.')
-    model_file = known_models[model]  
     
     if action == 'input':
         #1. GUI requests the use of a model

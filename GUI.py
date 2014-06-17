@@ -32,7 +32,8 @@ class gui (Frame):
         master.title="SmarterCities"
         self.pack()
         
-        self.file_for = {'311Calls':'StrawMan.py','Affordable':'StrawMan.py'}  # this can be a pickled list of known models
+        models = os.popen('ls models').read().strip().split('\n')
+        self.file_for = {m.replace('.py',''):'models/'+m for m in models}
         self.known_data_sets = {'311':'http://data.cityofnewyork.us/resource/erm2-nwe9.json?',
                                 'NYCCrimeData':'http://nycdata.pediacities.com/api/action/datastore_search?resource_id=345736e9-a37f-44a7-b4fe-4f564b37f3f0&'}
         self.control_variables = {}
@@ -47,7 +48,7 @@ class gui (Frame):
         model_frame.grid_propagate(0)
         
         Label(model_frame, text='Known models :', bg='white').pack(side=TOP)
-        for model in self.file_for:
+        for model in self.file_for.keys()[-1::-1]: #go backwards because the command = lambda is broken...
             b = Button(model_frame, text = model, height = 10, width = 10, 
                        bg='white', bd=5, 
                        command = lambda: self.make_panel_for(model))
@@ -56,10 +57,10 @@ class gui (Frame):
         
     def make_panel_for(self, model):
         """Create a panel for the parameter inputs for the *model*"""
-        print "make panel for",model,"called"
         new_frame = Frame(root, bd=5, bg='white', relief=GROOVE)
-        
+        print "make panel for",self.file_for[model]
         objects = Framework.input_(self.file_for[model])
+        print "objects:",objects
         objects = json.loads(objects)
         Label(new_frame, text=model, bg='white').pack(side='left')
         self.control_variables[model] = []

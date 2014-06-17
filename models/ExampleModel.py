@@ -18,6 +18,8 @@ def request():
     number of 311 calls with agent_name=NYPD. The framework 
     will make the API call for us.
     """
+    #If I want the Framework to make API calls I need to supply
+    #a JSON object like this one:
 #    return json.dumps({"sliders":[{"data":"311", 
 #                                   "keys":["agency_name"],
 #                                   "values":["NYPD"],
@@ -33,6 +35,9 @@ def request():
 #                                   "max":50,
 #                                   "name":"TLC calls"}],
 #                        "buttons":[] })
+    
+    #If I know the values for the sliders / button a priori
+    #then I can supply a JSON object like this:
     return json.dumps({"sliders":[{"min":0,
                                    "max":100,
                                    "name":"AMI 1",
@@ -97,6 +102,7 @@ def work(data):
     except ValueError:
         print 'data provided not a float'
 
+#these are necessary for calling the Model from the command line
 try:
     action = sys.argv[1]         
     if action == 'request':
