@@ -18,8 +18,6 @@ import urllib2
 def input_(model_file):
     #2. request data needs from bob
     cmd = 'python {0} request'.format(model_file)
-    #print "version", sys.version
-    #print "FRAMEWORK INPUT CALLED CMD:",cmd
     model_response = os.popen(cmd).read().strip()
     inputs = json.loads(model_response)
     
@@ -31,12 +29,8 @@ def input_(model_file):
     for slider in inputs["sliders"]:
         #build api query
         if "data" in slider:
-            print "slider data", slider["data"]
-            query = known_data_sets[slider["data"]]
-            for i in range(len(slider["keys"])):
-                query+=slider["keys"][i]+'='+slider["values"][i]+'&'
-    
             #make query
+            query = slider["data"]
             request = urllib2.Request(query)
             response = urllib2.urlopen(request)
             read = response.read()
@@ -65,9 +59,8 @@ def process(function, dictionary):
 def output(model_file, data):
     #6. run model with data
     cmd = 'python {0} work {1}'.format(model_file, ' '.join(data))
-    print "output cmd:",cmd
     output = os.popen(cmd).read().strip()
-    print "returned output:", output
+    
     #7. give data back to gui
     return output
 
@@ -86,4 +79,4 @@ if __name__ == '__main__':
         #2. 
         print output(model_file, sys.argv[3:])
     else:
-        print "Unknown:",action
+        print "Unknown Action:",action
