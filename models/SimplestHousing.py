@@ -67,10 +67,18 @@ inputs = [{'entity':'percent_by_income[Extremely_Low_Income]',
            'min':0,
            'max':10000}]
 		   
-outputs = ['total_taxes','total_expenditures','debt','Housing_Units[Extremely_Low_Income]',
-			'Housing_Units[Very_Low_Income]', 'Housing_Units[Low_Income]', 'Housing_Units[Moderate_Income]',
-			'Housing_Units[Middle_Income]', 'Housing_Units[High_Income]']
-steps = 1600  # number of time steps
+outputs = ['total_taxes',
+           'debt',
+           'Housing_Units[Extremely_Low_Income]',
+           'Housing_Units[Very_Low_Income]',
+           'Housing_Units[Low_Income]',
+           'Housing_Units[Moderate_Income]',
+           'Housing_Units[Middle_Income]',
+           'Housing_Units[High_Income]',
+            # 'total_expenditures', # <-- this one didn't work!
+           ]
+steps = 10 #1600  # number of time steps
+
 
 #what do the graphs look like?
 xlabel = 'hours'
@@ -98,7 +106,7 @@ def work(data):
         if len(data) > len(inputs): # only except one value per parameter
             raise Exception, data
             
-        data = map(int,map(float,data))  # convert strings to floats
+        data = map(int,map(float,data))  # convert strings to floats to ints
         
         #initialize the model
         cj = cookielib.CookieJar()
@@ -110,12 +118,6 @@ def work(data):
         if not dictionary['success']:
             raise Exception, dictionary
             
-        #DEBUG
-        #print "===init==="
-        #print 'query',query
-        #print 'dictionary',dictionary
-        #print 
-            
         #pass the input values
         query = host+model+"&command=currentInputValue&inputs="
         query+= str([{"entity":input_['entity'], "currentValue":data[index], "isGraphicalFunction":False} for index, input_ in enumerate(inputs)])
@@ -126,12 +128,6 @@ def work(data):
         dictionary = json.loads(read)
         if not dictionary['success']:
             raise Exception, dictionary   
-            
-        #DEBUG
-        #print "===set inputs==="
-        #print 'query',query
-        #print 'dictionary',dictionary
-        #print
         
         #run for a number of timesteps
         for s in range(steps):
@@ -142,12 +138,6 @@ def work(data):
             if not dictionary['success']:
                 raise Exception, dictionary
                 
-        #DEBUG
-        #print "===run",steps,"times==="
-        #print 'query',query
-        #print 'dictionary',dictionary
-        #print
-        
         #grab the output and place
         query = host+model+'&command=currentOutputValue&outputs='
         query+= str(outputs)
@@ -158,13 +148,7 @@ def work(data):
         dictionary = json.loads(read)
         if not dictionary['success']:
             raise Exception, dictionary
-            
-        #DEBUG
-        #print "===grab outputs==="
-        #print 'query',query
-        #print 'dictionary',dictionary
-        #print
-        
+             
         #build graphs
         graphs = []
         responses = json.loads(dictionary['response'])
@@ -187,12 +171,6 @@ def work(data):
         dictionary = json.loads(read)
         if not dictionary['success']:
             raise Exception, dictionary
-            
-        #DEBUG
-        #print "===send stop==="
-        #print 'query',query
-        #print 'dictionary',dictionary
-        #print
         
         return json.dumps(graphs)
     except ValueError:
