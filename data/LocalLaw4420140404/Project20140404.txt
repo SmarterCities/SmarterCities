@@ -1,0 +1,325 @@
+ProjectID|ProjectName|ProgramName|StartDate|ProjectedCompletionDate|ActualCompletionDate|TotalProjectUnits|CommercialSquareFootage|BorrowerLegalEntityName|GeneralContractorName|IsDavisBacon|IsSection220NYSLaborLaw|FinalOutcome
+39264|TBK605|Participation Loan Program|6/26/2009|||8||||||
+39369|897 Empire Blvd HDFC|Article 8A Loan|6/30/2009|||58||897-903 Empire Blvd HDFC||||
+39399|51 Columbia St./Masaryk Towers |Article 8A Loan|6/30/2009|||1109||Masaryk towers Corporation||||
+39402|UHAB - ROUND 5,5B AND 6|TPT - Tenant Petition|6/30/2009|||31|2189|New-Hab HDFC|ELH Construction|||
+39480|SOUTHERN BOULEVARD|LIHTC Year 15|6/26/2009|||21||||||
+41408|3511 Barnes Avenue/Tilden I|Article 8A Loan|8/6/2009|||125||Tilden Towers I|Ebro Contracting Corp.|Yes||
+41493|143 E. 23rd St/Kenmore Hotel|Article 8A Loan|7/23/2009|||326||Kenmore HDFC|Rosenwach Tank, Inc.|||
+43105|211-213 WEST 134 STREET|Participation Loan Program|6/28/2010|||5||St. Stephen's Holdings Housing Development Fund Corporation||||
+43276|Luna Park Housing Corp.|Article 8A Loan|6/28/2010|||1576||Luna Park Housing Corp.|Technical Construction Services, Inc.|||
+43311|128 West 138 Street, NY|Article 8A Loan|6/29/2010|||59||128 W.138ST HDFC||||
+43312|530 Manhattan Avenue, New York|Article 8A Loan|6/29/2010|||60||530 Manhattan Avenue HDFC|MDG Design & Construction LLC|||
+43313|1649 Amsterdam Avenue, WashingtonHeightsWestharlem|Article 8A Loan|6/30/2010|||132||Washington Heights, West Harlem HDFC- Heritage Housing|APTek Restoration, Inc.|Yes||
+43388|KNICKERBOCKER VILLAGE INC.|LMDC - Preservation|6/30/2010|||1590||||||
+43566|505 WEST 51ST STREET|Inclusionary Housing|7/28/2010|||10||501 West 51 Associates LLC|Lemi Construction|||
+44072|118-16 153RD STREET|REO|8/3/2010|||1||Restoring Urban Neighborhoods LLC|Horizon Construction|||
+45239|ST. LOUIS HALL|Supportive Housing - Rehab|1/28/2011|||124||St. Louis L.P.||||
+45586|382 LEFFERTS AVENUE|HARP|3/17/2011|||46||Tali Realty LLC||||
+48516|118-48 153RD STREET|REO|10/14/2011|1/16/2013||2||Restored Homes HDFC|Tekton Contracting Corp|||
+48517|93-09 ELDERT LANE|REO|10/17/2011|9/19/2012||2||Restored Homes HDFC|Horizon Construction|||
+48520|817 EAST 223RD STREET|REO|9/26/2011|2/6/2013||3||Restored Homes HDFC|L. Riso & Sons Co., Inc.|||
+48522|874 JEFFERSON AVENUE|NSP 2|7/21/2011|9/14/2012||12||Housing Works 874 Jefferson Housing Development Fund Co||||
+48524|141-48 183RD STREET|REO|11/22/2011|12/31/2012||1||RUN LLC|Horizion Construction|||
+48528|338 HENDRIX STREET|REO|12/6/2011|1/27/2013||2||Restored Homes HDFC|Horizon Construction|||
+48529|102-11 FARMERS BLVD|REO|12/6/2011|12/31/2012||1||RUN LLC|PROJECT EYE CONSULTANTS INC|||
+48531|114-34 147TH STREET|REO|12/7/2011|12/3/2012||1||RUN LLC|POKO Builders, LLC|||
+48537|TBK515 - JEFFERSON CATCH HDFC|TPT|12/5/2011|11/7/2014||61|19800|Jefferson CATCH HDFC, Inc.||||
+48538|187-07 KEESEVILLE AVENUE|REO|1/20/2012|12/23/2012||1||RUN LLC|Horizion Construction|||
+44365|9, 11 -17 Second Avenue|Inclusionary Housing|12/15/2011|12/15/2014||65|8800|Jupiter 21 LLC|BFC Second Avenue Builders LLC|||
+48033|119-66 178th Place Qns|REO|4/19/2012||7/1/2013|1|||Tip Top General Contracting Corp.|||
+48037|140-02 Linden Blvd, Qns|REO|4/19/2012|6/20/2013||1|||POKO Builders, LLC|||
+46017|Maple Mesa 232 E169 & 601 E163|Low Income Rental|5/30/2012|2/28/2014||59|6954||P & P Contracting|||
+47926|TBK701|TPT|4/30/2012|10/31/2013||12|1184||Prisma Construction Inc|||
+48375|3557 Holland Avenue|REO|6/27/2012|6/27/2013||2||Restored Homes HDFC|Empire Home Developers, Inc.|||
+48087|Morris Court Apartments|Inclusionary Housing|6/28/2012|6/29/2015||201||Morris Avenue Owners LLC|Joy Construction Corp.|||
+47932|TBK507-702 Shinda|TPT|6/28/2012|6/1/2014||21|3023|PASS Properties BK LLC||||
+48068|50 North 5th|Inclusionary Housing|7/11/2012|6/30/2015||229|7500|SM Wythe LLC|Noble Construction Group, LLC|||
+47933|TBX904|TPT|6/29/2012|5/1/2014||185||TPT Davidson Avenue LLC|Homebuilders 1 LP|||
+48380|Borinquen Court Associates LP|HUD Multi-Family Program|6/13/2012|1/31/2014||145||Borniquen Court Associates, LP|Galaxy G.C. Group LLC|||
+48305|Quadrant Properties HDFC IV|Article 8A Loan|6/27/2012|7/1/2014||60||Quadrant Properties HDFC|Apartment Rehb Corp.|Yes||
+47799|2440 Bronx Park East|Article 8A Loan|6/26/2012|7/1/2013||55||Mavino Realty Co., Inc.|Shamas Contracting Co., Inc.|||
+47821|Hunts Point HDFC|Article 8A Loan|6/19/2012|6/19/2014||416||Hunts Point HDFC|Shamas Contracting Corp.|||
+47865|Crotona V|HUD Multi-Family Program|6/28/2012|4/1/2014||87|5660||Tekton Contracting Corporation|||
+48452|Marshall Court Housing Development Fund Corp|Article 8A Loan|6/29/2012|7/1/2013||48||Marshall Court Housing Development Fund Corporation|Shamas Contracting Co., Inc.|||
+47774|1820 Harrison Avenue|Article 8A Loan|6/28/2012|5/1/2013||75||1829 Harrison Realty LLC||||
+47775|1403 Rosedale Ave|Article 8A Loan|6/28/2012|6/28/2013||55|||Shamas Contracting Co., Inc.|||
+48633|4111 Hill Avenue|REO|7/23/2012|12/31/2012||2||Restored Homes HDFC|Project Eye Consultants Inc.|||
+47886|552 Academy Street 1|Overleveraged|5/18/2012|11/18/2013||72||552-562 United L.P.|Mega Contracting Group LLC|||
+48365|81 Madison|LMDC / Chinatown|6/29/2012|6/29/2012||20||Asian American HDFC||||
+48873|Ely Avenue Apartments|HARP|9/27/2012|9/27/2013||20|||HiRise Contracting Group, Inc.|||
+49139|124-42 135th Place|REO|11/26/2012|6/28/2013||1||Restored Homes HDFC|Tip Top General Contracting Corp|||
+48884|Tanya Towers Inc.|Article 8A Loan|10/23/2012|10/23/2014||138||Tanya Towers Inc.|A W & S Construction Corp.|||
+47945|736 Franklin Avenue aka 649 Sterling Place|Small Owner Repair Program|12/13/2012|8/13/2013||7|||Thruway Builders Inc|||
+48888|Trinity Studio HDFC|Article 8A Loan|11/30/2012|12/1/2013||20|||Expo Development Corp.|||
+48887|1160 Colgate Ave HDFC|Article 8A Loan|1/7/2013|1/7/2014||17||1160 Colgate Ave HDFC|MDG Design & Construction|||
+48910|Council Towers VII|Senior Housing|1/29/2013|10/8/2014||79||Council Towers VII Limited Partnership|Chateau GC LLC|Yes||
+48755|Bronxwood Towers|Article 8A Loan|6/25/2013|6/25/2014||108||The Bronxwood Tower, Inc.||||
+49270|257 West 29th Street Supportive Housing|Inclusionary Housing|6/4/2013|6/10/2016||37||West of Seventh Limited Partnership|Chateau GC LLC|||
+48733|665 Vanderbilt Avenue|Small Owner Repair Program|6/20/2013|2/20/2014||7||Albano Ballerini & Ellen Fishman|Zaman Construction Corp|||
+49517|Webster Commons Building B|Multifamily Rental - Mixed|6/27/2013|3/31/2015||95||Webster Building B LLC|Joy Construction Corp.|||
+48892|1522 Bryant Ave|Article 8A Loan|6/21/2013|6/19/2015||11||1522 BRYANT AVENUE REALTY CORP|Shamas Contracting Co., Inc.|||
+48891|NewSet II HDFC|Article 8A Loan|6/26/2013|6/26/2014||27||Newset II HDFC|Expo Development Corp.|||
+49275|Ocean Towers Partners LLC|Article 8A Loan|6/20/2013|6/20/2014||360||Ocean Towers Partners LLC||||
+48744|1363 St. Johns Place SORP|Small Owner Repair Program|12/13/2012|4/30/2014||7||St. Johns Capital Corporation|Thruway Builders Inc.|||
+48623|1167 President Street -SORP|Small Owner Repair Program|12/13/2012|4/30/2014||8||President Capital Group Inc.|ALKO MANAGEMENT CORP.|||
+48730|539 Wales Avenue Bronx|Small Owner Repair Program|2/12/2013|3/31/2014||12||Juve Realty Corp|Padma Contracting Corp|||
+49272|200 East 39th Street|Inclusionary Housing|9/26/2013|9/26/2016||91|6365|CB Frontier LLC|CM & Associates|||
+48681|Stagg Morgan|LIHTC Year 15|6/26/2013|1/1/2015||36||Brooklyn Neighborhood HDFC|Shamas Contracting Co., Inc.|||
+49060|MRC Melrose|LIHTC Year 15|6/5/2013|12/5/2014||50||MRC Melrose Housing Development Fund Corporation|Shamas Contracting Co., Inc.|||
+48685|CCD2|LIHTC Year 15|6/18/2013|12/19/2014||43||Bedford Village HDFC|Shamas Contracting Co., Inc.|||
+44865|El Rio Residence_1041 East 179th St.|Supportive Housing - New Construction|6/27/2013|7/1/2015||65||El Rio HDFC|Fazio Contracting|Yes||
+46264|27 Albany|Inclusionary Housing|5/16/2013|5/20/2016||50|6002|Bedford-Stuyvesant South One LLC|BRP Construction Group LLC|||
+48739|110 Madison|Inclusionary Housing|10/31/2012|10/30/2015||18||110 Mad Dev LLC|SRH Construction LLC|||
+46262|240 Manhattan Avenue|Inclusionary Housing|8/2/2012|8/7/2015||69||110 Manhattan Equities, LLC|Artimus Construction Inc.|||
+49273|Frost Street Apartments|Inclusionary Housing|3/21/2013|3/25/2016||47||Frost Street Apartments LLC||||
+48555|1133 Manhattan Avenue|Inclusionary Housing|12/21/2012|12/21/2015||210|8009|1133 Manhattan Avenue LLC|Mega Contracting|||
+49576|3629 White Plains Road|421a Affordable|6/27/2013|6/30/2016||69||White Plains North L.P. |Chateau GC LLC|||
+48743|21 West End Avenue (15 West End Avenue)|Inclusionary Housing|12/18/2012|12/18/2015||616|23072|Riverside Center Parcel 2 BIT Associates LLC|TISHMAN CONSTRUCTION COMPANY OF NEW YORK|||
+44420|LESPMHA ( 535-537 E. 11 Street)|Supportive Housing - New Construction|10/10/2012|4/9/2014||46||Garden House III, LP |GKC Industries, Inc. |Yes||
+48690|Parkside Senior Citizens|LIHTC Year 15|6/25/2013|12/25/2014||43||Parkside Housing Development Fund Company Inc.|Shamas Contracting Co., Inc.|||
+49070|Broadway Putnam|LIHTC Year 15|6/26/2013|1/1/2015||47||Broadway/Putnam. L.P.|MDG Design & Construction|||
+48677|Courtlandt Avenue (SEBCO)|LIHTC Year 15|6/25/2013|1/1/2015||36||479 Courtlandt Avenue Housing Development Fund Corp.|Shamas Contracting Co., Inc.|||
+47838|Hunterfly|LIHTC Year 15|4/10/2013|10/1/2014||43|1500|Hunterfly Limited Partnership|MDG Design & Construction|||
+48689|Capitol Hall|HUD Multi-Family Program|12/27/2012|12/31/2015||202|1376|Capitol Hall Preservation Associates, L.P.|Notias Construction, Inc.|||
+48415|The Woodstock Hotel|LIHTC Year 15|7/2/2012|1/1/2014||281||The Woodstock HDFC for Senior Citizens|Maxxum Construction Corp.|||
+48765|360 Preservation LLC|LIHTC Year 15|6/27/2013|3/1/2015||350||360 Preservation LLC|L & M Builders|||
+47770|292 East 3rd Street|Article 8A Loan|12/21/2012|12/30/2013||7|||MGN Construction Corp|||
+47824|Billingsley Terrace Apartments|LIHTC Year 15|6/29/2012|1/1/2014||26|||BSW Construction Corp.|||
+47826|Milagrosa Houses|LIHTC Year 15|6/22/2012|1/1/2014||58|||MDG Design & Construction|||
+44423|Cypress Village|Low Income Rental|5/23/2012|7/31/2013||29|||J. Pilla Contracting|||
+47822|Housing 2012|LIHTC Year 15|6/18/2012|1/1/2014||75|||Rahim Construction Corporation|||
+47873|Mandela I|LIHTC Year 15|6/25/2012|1/1/2014||70|||Rizzo New York, Inc.|||
+47866|Whipple Lewis|LIHTC Year 15|6/22/2012|1/1/2014||36|||Stateside Construction LLC|||
+47867|Mercy Gardens aka Classon Avenue|LIHTC Year 15|6/22/2012|1/1/2014||79|||FG-PH Corporation|||
+48126|PRC Westchester Avenue|HUD Multi-Family Program|6/28/2012|12/1/2014||409||PRC Westchester Avenue LLC||||
+47882|MBD Resyndication|LIHTC Year 15|6/28/2012|7/1/2014||361||MBD Silva Taylor LLC |Monadnock Construction|||
+44373|The Sugar Hill Project|Low Income Rental|5/16/2012|5/16/2014||124||Broadway Sugar Hill Housing L.P.|Mountco Construction & Development Corp|Yes||
+45961|500 West 30th Street|Inclusionary Housing|5/8/2012|5/1/2015||386||500 West 30th LLC|Related Construction LLC|||
+48086|Rufus King Court Apartments|Inclusionary Housing|5/30/2012|5/29/2015||65||Rufus King Court LP|Chateau GC LLC|||
+47831|WHGA Amsterdam II Associates, L.P.|LIHTC Year 15|3/29/2012|10/1/2014||44|6700|WHGA Amsterdam II Associates, L.P.|Expo Development Corp.|||
+48390|South Brooklyn Renewal Projects|LIHTC Year 15|6/28/2012||8/6/2013|28|882||R and S Construction Corp.|||
+48060|Willoughby-Tompkins|LIHTC Year 15|6/22/2012|1/1/2014||55|||Expo Development Corp.|||
+47798|219 Henry Street|LIHTC Year 15|4/17/2012||8/19/2013|23|||Rizzo New York, Inc.|||
+48521|631 WEST 152 STREET|Participation Loan Program|9/8/2011|3/8/2013||50||631 Associates, LLC|Apartment Rehabilitation Corporation|||
+48532|DCA|Participation Loan Program|12/29/2011|12/29/2012||216|||Renewal Construction Services|||
+48890|Crotona Ave HDFC|Article 8A Loan|1/15/2013|1/15/2014||45||Crotona Ave HDFC|R and S Construction Corp.|||
+49628|1775 Houses 2013|HUD Multi-Family Program|6/27/2013|6/28/2014||255|6000|1775 TP4 HOUSING DEVELOPMENT FUND COMPANY, INC.||||
+49569|AK Houses 2013|HUD Multi-Family Program|6/27/2013|6/27/2014||157||AK Houses TP4 LLC||||
+48686|Geffner House|LIHTC Year 15|6/21/2013|12/21/2014||308||MRG Partners LP|MDG Design & Construction|||
+49103|1479 Macombs Road|Participation Loan Program|6/27/2013|11/30/2014||72||1479 Macombs Road LLC|Home Builders 1, L.P.|||
+48754|John Paul II - 202 W 141 St|Article 8A Loan|6/27/2013|6/27/2014||69||Southwest 141st Street Housing Development Fund Company, Inc.||Yes||
+48896|101 Carlton Ave|Article 8A Loan|6/25/2013|6/25/2014||135||Brooklyn Community Housing & Services, Inc. ||||
+48766|PRC Shakespeare Avenue|HUD Multi-Family Program|6/27/2013|11/1/2014||414||PRC Shakespeare Avenue LLC|MELCARA CORPORATION|||
+48889|Luna Park Housing|Article 8A Loan|6/28/2013|6/28/2014||1576||Luna Park Housing|Technical Construction Services, Inc.|||
+48660|VIP East Tremont Portfolio|Participation Loan Program|6/26/2013|3/26/2015||114|3000|East Tremont EC LLC|Erin Construction and Development Co., Inc|||
+48625|TBK901 - MHANY|TPT|6/28/2013|12/28/2015||83||MHANY 5 Associates LLC|Notias Construction, Inc. |||
+48632|Academy Row 2|Participation Loan Program|6/27/2013|3/27/2015||100|266|Rivulet Row Associates, LLC|Lemle & Wolff|||
+47883|Northeast Brooklyn (Cheryl's Villa I And II)|LIHTC Year 15|7/31/2012|2/1/2014||40||Northeast Brooklyn Partnership|MDG Design & Construction|||
+44350|West Tremont|Low Income Rental|6/28/2013|11/30/2015||61||West Tremont Senior Residences LLC|Galaxy General Contracting|||
+48634|Whitestar|Participation Loan Program|6/27/2013|3/27/2015||51||Whitestar Associate LLC|Lemle & Wolff|||
+48897|3405 Broadway HDFC|Article 8A Loan|6/25/2013|6/25/2014||16|1250|3405 Broadway HDFC|Shamas Contracting Co., Inc.|||
+47772|400 Convent Avenue HDFC|Article 8A Loan|6/27/2013|6/30/2014||39||400 Convent Avenue Housing Development Fund Corporation|Shamas Contracting Co., Inc.|||
+48788|927 COLUMBUS AVENUE HDFC|Article 8A Loan|6/20/2013|6/20/2014||12||927 Columbus Ave HDFC|Rizzo New York, Inc.|||
+48657|500 Trinity Avenue|Participation Loan Program|6/19/2013|4/19/2015||188|4180|500 Trinity LLC|Jeffell Contracting Corp.|||
+48902|854 Intervale Ave|Article 8A Loan|6/28/2013|6/28/2014||15||854 Intervale Avenue Housing Development Fund Corporation|Shamas Contracting Co., Inc.|||
+48895|1130-1146 Colgate Ave|Article 8A Loan|6/27/2013|6/27/2014||84||1130-1146 Colgate Avenue Associates|MDG Design & Construction|||
+48752|500 Southern Boulevard|Article 8A Loan|6/27/2013|6/30/2014||137||Mott Haven Victory HDFC|Expo Development Corp.|||
+48125|St. Francis And George Hardy|HUD Multi-Family Program|10/11/2012|10/31/2014||204||George Hardy St. Francis Apartments LLC|Notias Construction, Inc.|||
+47921|East 99th Street (HHC)|Supportive Housing - New Construction|10/25/2012|10/25/2014||176|3329|East 99th Street Developers LLC|Procida Construction|Yes||
+48726|Hunters Point South: Parcel A|Multifamily Rental - Mixed|2/14/2013|2/13/2015||619|13739|HPS 50th Avenue Associates LLC|Monadnock Construction|||
+49143|Hunters Point South: Parcel B|Multifamily Rental - Mixed|2/14/2013|2/13/2015||306|2937|HPS Borden Avenue Associates LLC|Monadnock Construction|||
+46299|Utica Place|Low Income Rental|1/23/2013|8/28/2014||87||Utica Place Residential LLC|Chatsworth Builders LLC|||
+47805|Creston|Overleveraged|5/23/2013|11/23/2014||122||WFHA Creston Avenue, L.P.|Notias Construction, Inc. |||
+49534|Mother Arnetta Crawford Housing|Low Income Rental|6/27/2013|6/25/2015||84||Union Grove Associates II LLC|MacQuesten Construction Management|||
+48003|Soundview Family|Low Income Rental|6/28/2013|6/27/2015||120||Soundview Family Housing LLC|CONGRESS BUILDERS LLC|||
+44275|Knickerbocker Commons|Low Income Rental|11/28/2012|5/28/2014||24||Knickerbocker Commons Associates L.P.|Galaxy G.C. Group LLC|||
+44369|Atlantic Commons Phase 2|Low Income Rental|6/28/2013|12/31/2014||44||Atlantic Commons Cornerstone LP|MDG Design & Construction|||
+44258|Bradhurst Cornerstone II Apartments|Low Income Rental|6/28/2013|11/30/2015||31||Bradhurst Cornerstone II Owners LLC|GKC Industries, Inc.|||
+44362|Park West Apartments|Low Income Rental|6/27/2013|4/26/2015||134|13520|2026 Westchester Realty LLC|Procida Construction|||
+45142|CLOTH Amsterdam Ave|Supportive Housing - New Construction|8/28/2012|2/28/2014||44||2146 Better Homes HDFC|Delight Construction|Yes||
+48771|Beulah Resyndication (Dunn)|LIHTC Year 15|6/27/2013|12/27/2014||293||Dunn Beulah XV, L.P.|MDG Design & Construction|||
+46076|3556 Webster Avenue|Low Income Rental|1/8/2013|1/31/2015||135||Webster Building A LLC|Joy Construction Corp.|||
+48772|Gateway Elton - Phase 2|Low Income Rental|1/30/2013|12/19/2014||175|24000|Elton Owner II LLC|Cheever Development|||
+45301|HRBI Housing at Washington Houses|Low Income Rental|2/5/2013|8/29/2014||89||104th Street Housing L.P.|Lasberg Construction Associates|||
+44345|Crossroads Plaza- Rental Mixed|Multifamily Rental - Mixed|12/20/2012|9/20/2014||126|20000|Crossroads III Community LLC|New Cassel Construction Corp.|||
+45677|226 Linden Blvd|Supportive Housing - New Construction|6/28/2013|1/15/2015||72||Ruby's Place Linden HDFC|Fazio Contracting|Yes||
+47843|Hoewood Point|Participation Loan Program|6/19/2012|6/19/2014||80|2000||Apartment Rehabilitation Corporation|||
+48414|Gregene Houses|LIHTC Year 15|6/28/2012|12/31/2013||34|||Shamas Contracting Co., Inc.|||
+48423|Vanmew Houses|LIHTC Year 15|6/28/2012|12/31/2013||30|||Shamas Contracting Co., Inc.|||
+48425|453 W. 166th St.|LIHTC Year 15|6/29/2012|12/31/2013||13|||Dun-Rite, Inc. |||
+48514|ST. MARKS I|LIHTC Year 15|9/26/2011||4/18/2013|89|||Almo Group Corp|||
+48515|ST. MARKS II|LIHTC Year 15|9/26/2011|9/26/2013||82||St. Marks Housing Assoc. Phase II L.P.||||
+48540|KINGSBRIDGE COURT|HUD Multi-Family Program|2/16/2012|1/1/2014||98||KINGSBRIDGE COURT OWNERS LLC|A&A Property Maintenance Services Inc.|||
+47477|Morris Court|Low Income Rental|6/28/2012|6/30/2014||201||Azimuth Development Group LLC|Joy Construction Corp.|||
+45336|1070 Washington|Low Income Rental|4/5/2012|10/31/2013||49|||Great American Construction|Yes||
+44349|E. Clarke Pl.|Low Income Rental|3/1/2012|2/28/2014||106|2430||Artec Construction & Development|||
+44336|Lebanon West Farms/Phipps|Low Income Rental|6/28/2012|6/30/2014||141|7162||Mega Contracting, Inc.|||
+45990|Berean Apartments|Multifamily Rental - Mixed|1/20/2012||2/11/2014|107|||Procida Construction|||
+44320|Macedonia Plaza|Low Income Rental|5/2/2012|5/2/2014||143|6287|Macedonia Plaza Development LLC|BRP Construction Group, LLC|||
+44403|Highbridge Overlook|Low Income Rental|2/1/2012|1/31/2014||155|||HLS Builders|||
+44544|Truxton Street|Supportive Housing - New Construction|6/22/2012|12/15/2014||48||Services for the UnderServed, Inc.|J. Pilla Contracting|Yes||
+44377|329 Lincoln Road|Supportive Housing - New Construction|6/29/2012|9/28/2012||22|||Mega Contracting, Inc.|Yes||
+45206|Harlem River Point South- 200 East 131st Street|Multifamily Rental - Mod/Mid|6/28/2012|6/28/2014||140||Harlem River Point South LLC|Artimus Construction|||
+45578|272 Manhattan Avenue|Multifamily Preservation Loan Program|6/25/2013|6/25/2015||57||272 Equities LLC|Artimus|||
+49281|JAMAICA|Multifamily Preservation Loan Program|7/12/2013|6/28/2015||22||MHANY 2012 HDFC|PROJECT EYE CONSULTANTS INC|||
+49455|TMN209D-Settlement Housing|TPT|6/28/2013|3/31/2015||20||287 HDFC|FG-PH Corporation|||
+49010|TBK609-NAPCO|TPT|1/10/2013|9/30/2013||2||722 Nostrand Avenue Realty LLC |Peter Nakos|||
+49939|150-41 116th Drive|REO|11/29/2012|5/13/2013||1||Restored Homes HDFC|Horizon Construction|||
+48640|Boston Road Houses (1351 Boston Road)|Supportive Housing - New Construction|8/12/2013|5/15/2015||43||1351 Boston Road LP|Apartment Rehabilitation Corporation|Yes||
+48049|WHGA Schomburg Place|Multifamily Preservation Loan Program|8/7/2013|8/7/2015||60||WHGA Schomburg Place Limited Partnership|SP Contractors of NY, Inc|||
+48626|TBK410B - BNIA/ELH|TPT|8/7/2013|8/1/2015||26||NIA JV LLC|ELH CONSTRUCTION LLC|||
+49285|327-331 East Houston Street|Inclusionary Housing|9/9/2013|9/9/2015||78||East Houston Development, LLC|Joy Construction Corp.|||
+47861|992 Willoughby Avenue|Article 8A Loan|9/18/2013|9/18/2014||8||Gouramety Jackson |Nationwide Mechanical, Inc|||
+48704|Casa Clinton|LIHTC Year 15|9/5/2013|3/4/2015||87||Casa & Clinton HDFC|Shamas Contracting Co., Inc.|||
+48748|266 Throop Avenue|Small Owner Repair Program|5/23/2013|3/31/2014||6||266-268 Throop Avenue LLC|ALKO MANAGEMENT CORP.|||
+48745|1479 Lincoln Place Sorp|Small Owner Repair Program|12/13/2012|4/30/2014||9||Lincoln Commercial Capital Group|Thruway Builders Inc.|||
+48738|1389 St. Johns Place Sorp|Small Owner Repair Program|12/13/2012|4/30/2014||8||St. Johns Capital Corp.|ALKO MANAGEMENT CORP.|||
+48641|304 Echo Place|Supportive Housing - New Construction|6/28/2013|4/1/2015||55||PCMH Echo Place HDFC|J. Pilla Contracting|Yes||
+45223|N/A|Supportive Housing - New Construction|5/3/2013|9/3/2015||121||N/A|Mega Contracting, Inc.|Yes||
+48735|TMN902 - Catspaw|TPT|10/9/2013|10/9/2015||53||TPT Homes in Harlem LLC|Catspaw Construction|||
+48937|244-246 Elizabeth Street|Affordable Neighborhood Cooperative Program|8/13/2013|2/27/2015||19|376|Community Renewal Housing Development Fund Corporation|ICM Global Design|||
+48928|CONCOURSE VILLAGE INC|Article 8A Loan|1/3/2013|1/3/2014||1878||Concourse Village Incorporated|Technical Construction Services, Inc.|||
+49276|301 West 46th Street|CURE|5/20/2013|5/20/2016||12|3666|301 West 46 Owners LLC|Pineapple Development LLC, c/o Wrobel & Schatz LLP|||
+44306|640 Broadway|Low Income Rental|10/30/2013|7/30/2015||7||640 Broadway HDFC |Euro Builders|||
+44888|Concern. 3349 Webster Ave. Norwood Terrace|Supportive Housing - New Construction|11/21/2013|8/14/2015||115||3349 Webster Avenue Associates LLC|HLS Builders|||
+48013|TBX906-PROMESA|TPT|11/12/2013|10/30/2015||65||Crotona Park Residences LLC|GKC Industries, Inc.|||
+49391|855 Avenue Of The Americas|Inclusionary Housing|12/5/2013|12/5/2016||375|15849|855 MRU LLC |Gotham Construction|||
+48929|515 West 28th Street|Inclusionary Housing|11/26/2013|11/27/2016||375|16198|Kadima Tenth Avenue SPE LLC|T.G Nicket & Associates|||
+49026|2501 Hoffman St.|Article 8A Loan|12/11/2013|1/1/2016||25||2501 Hoffman Properties LLC|Ghotra and Sons General Construction, Inc|||
+48621|TBX903 - Highbridge|TPT|11/6/2013|11/2/2015||65||West 170th Ogden LP|Nova Builders|||
+48543|250-254 EAST 4TH STREET|Inclusionary Housing|3/16/2012|3/13/2015||34||250-254 East Fourth Street, L.P.|Phoenix Builders, Inc.|||
+48510|PROMESA COURT RESIDENCES LP|Neighborhood Redevelopment Program|8/11/2011|2/11/2014||48||MECCA CONTRACTING|Mecca Contracting Inc.|||
+47850|539/541 East 147 Street|Overleveraged|2/27/2013|11/27/2014||21||WFHA East 147 Street, L.P.|Builders R Us Construction (BRUS)|||
+47767|TBX908 - Dougert|TPT|1/23/2013|1/31/2015||54||Dougert Realty Round II LLC|Dougert Construction Corp.|||
+47914|TBX907A- Belmont Arthur|TPT|12/14/2012|10/7/2014||43||Arthur Elliot Avenues HDFC|Expo Development|||
+49909|89-23 89th Street|REO|5/2/2013|12/30/2013||1||RUN LLC|Horizion Construction|||
+45846|234 LEFFERTS AVENUE|Small Owner Repair Program|6/29/2011|||7||Ives & Maryse Prismy||||
+45852|QUEENSBORO|HARP|6/27/2011|||117|16481|Queensboro Development, LLC|Mega Contracting Group, LLC|||
+45862|TMN 601-503|TPT - PLP|6/30/2011|||31|1175|TPT Partners LLC||||
+45863|TBK 401E|TPT - PLP|6/23/2011|||35||MHANY 2002 HDFC||||
+45872|Quadrant Properties HDFC|Article 8A Loan|6/29/2011|||312||||Yes||
+45884|WEBSTER SENIOR BUILDING C LLC|Stand Alone Tax Credits|6/17/2011|||51||Webster Senior Building C LLC|Joy Construction|||
+45887|2706 Valentine Ave|Article 8A Loan|6/24/2011|||25||2706 Valentine LLC|R & S Construction Corp.|||
+45889|509 E.182nd St&2678 Valentine Avenue|Article 8A Loan|6/29/2011|||27||2678 Valentine Inc.||||
+45890|38-40 East 169 Street, Bx|Article 8A Loan|6/15/2011|||42||David Diamond|R & S Construction Corp.|||
+45894|1885-93 7th Avenue HDFC|Article 8A Loan|6/29/2011|||31||1885-93 7th Avenue HDFC|Vertical Maintenance & Repair, Inc.|||
+45902|NWR-NORTHERN DAYBREAK|LIHTC Year 15|6/24/2011|||51||Neighborhood Women HDFC|Raschel Construction Corp.|||
+45906|ST. SIMEON HOUSES|LIHTC Year 15|6/27/2011|||27||Second Canterbury Housing Development Fund Corporation|GENESUS ONE|||
+45908|NEW HAARLEM VILLAGE|LIHTC Year 15|6/30/2011|||70||New Haarlem Village 1 Hope Housing Development Fund|Apex Building Company|||
+45909|ROOSEVELT LANE APARTMENTS|LIHTC Year 15|6/30/2011|||46||Roosevelt Lane Hope Housing Development Fund Company, Inc.|Apex Building Company|||
+45924|St John's Place Family Center HDFC|Article 8A Loan|6/24/2011|||99||St John's Place Family Center |FG PH Contracting Corp.|Yes||
+44254|W. 44th St. And 11th Ave./Studio City|Multifamily Rental - Mixed|6/29/2011||10/16/2013|1238|17000|44th Street Development LLC|Gotham Construction|||
+50568|126-19 103rd Avenue|REO|9/25/2013|3/14/2014||1||RUN LLC|EMPIRE HOME DEVELOPERS, INC.|||
+48254|365 Jay Street|Multifamily Preservation Loan Program|6/27/2013|6/27/2015||18|690|Jay Street Firehouse LP|MDG Design & Construction|||
+44303|Coretta Scott King Apartments|Senior Housing|7/10/2013|4/1/2015||51||CSK HDFC|Cheever Development|Yes||
+48444|Ridgewood-Bushwick Harman St HDFC|Article 8A Loan|6/28/2012|6/28/2013||18|||Horizion Construction|||
+48783|Willoughby Court Apartments LP|Article 8A Loan|11/13/2012|12/1/2014||267||Willoughby Court Apartments LP|Notias Construction, Inc. |||
+49058|Jacquline Denise Davis|LIHTC Year 15|6/5/2013|1/1/2015||68||JDD Court Housing Development Fund Company|Shamas Contracting Co., Inc.|||
+48639|Common Ground_1191 Boston Rd|Supportive Housing - New Construction|6/27/2013|12/15/2015||155||Boston Road II Housing Development Fund Corporation|Mountco Construction|Yes||
+49575|1016 Washington Avenue|421a Affordable|6/27/2013|6/24/2016||65||1016 Washington Avenue Associates LLC|Joy Construction Corp.|||
+48678|Willis Avenue (SEBCO)|LIHTC Year 15|6/25/2013|1/1/2015||32||Willis Avenue Associates Limited Partnership|Shamas Contracting Co., Inc.|||
+48676|515 New Life|LIHTC Year 15|6/17/2013|1/1/2015||55||515 New Life Housing Development Fund Corporation|CASTLESTONE CONSTRUCTION CORP|||
+47880|Mandela II|LIHTC Year 15|6/25/2012||9/24/2013|42|||Ameri Restoration, Inc.|||
+46061|Avalon West Chelsea|Inclusionary Housing|11/7/2011|11/7/2014||690||Avalon West Chelsea, LLC|AVALONBAY NYC DEVELOPMENT, INC.|||
+47844|Alexander 140 Street Quadrant|Participation Loan Program|6/27/2012|1/2/2014||24|600||Apartment Rehabilitation Corporation|||
+48683|San Francisco Houses, Inc.|LIHTC Year 15|6/25/2013|12/25/2014||70||San Francisco Associates Limited Partnership|Central Development Corp.|||
+48886|Renewal Housing Development Fund Company, Inc.|Article 8A Loan|6/14/2013|6/15/2014||132||Renewal Housing Development Fund Company|Shamas Contracting Co., Inc.|||
+48809|722 Henry Street|LIHTC Year 15|9/25/2012|4/1/2014||16||722 Henry Street Apartments HDFC|Ghotra and Sons Construction|||
+48760|1001 Anderson Ave|Article 8A Loan|6/26/2013|6/30/2014||22||1001 Anderson Avenue HDFC|Total NY Construction Corp|||
+47862|1015 SUMMIT AVENUE HDFC|Article 8A Loan|6/27/2013|6/28/2014||37||1015 Summit Ave HDFC|Expo Development Corp.|||
+48909|Arker Senior- The Woodlands|Senior Housing|1/29/2013|10/8/2014||101||Givan Rombouts L.P.|Chateau GC LLC|Yes||
+44807|161st Street Development (MIP)|Multifamily Rental - Mixed|12/3/2012|9/3/2014||101|9836|Jamaica 161 Realty, LLC|Banta Homes Corp.|||
+44249|2311 Tiebout Avenue|Low Income Rental|6/10/2013|12/31/2014||20||Tiebout Green LLC|Galaxy General Contracting|||
+45280|899 Westchester Avenue|Low Income Rental|2/21/2013|2/21/2015||141||Westchester Point LLC|Joy Construction Corp.|||
+44241|Bushwick East Cluster|Small Homes Scattered Sites|10/24/2012|10/24/2014||30||Shelter Rock Builders, LLC|Shelter Rocker Builders LLC|||
+48559|St. Lucy's Apartments|HUD Multi-Family Program|6/28/2012|12/31/2013||100|||Notias Construction, Inc. |||
+44366|East Harlem Veterans Initiative -Now Prospero Hall|Supportive Housing - New Construction|5/22/2012|5/22/2012||87|||Bruno Frustaci Contracting Inc|Yes||
+45675|Villa Avenue Residence_100 East 204th Street|Supportive Housing - New Construction|6/28/2013|1/15/2015||57||PRI Villa Avenue HDFC|J. Pilla Contracting|Yes||
+49481|3361 3rd Avenue|Supportive Housing - New Construction|8/14/2013|10/14/2014||63||3361 Third Avenue HDFC|Strategic Construction Corp|Yes||
+48746|277 Pennsylvania Avenue SORP|Small Owner Repair Program|5/15/2013|4/30/2014||16||Earl and Shirley Fullerton|Yossi Stern Construction & Real Estate Management Inc.|||
+47652|KING GARDEN APARTMENTS|Supportive Housing - New Construction|9/27/2012|3/27/2014||66||King Garden Apartments, L.P.|DP Group |||
+49067|530 E. 159 St.|Article 8A Loan|5/17/2013|5/17/2014||44||530 E. 159 Street Housing Development Fund Corporation|Maximum Mechanical, LLC|||
+50602|POP. Caring Communities|Supportive Housing - Rehab|11/21/2013|12/2/2015||236||Caring Supported Housing LLC|MDG Design & Construction|||
+50414|Daly IV HDFC|Extended Affordability Housing Supervision|12/16/2013||12/16/2013|274|4351|DALY IV HDFC|CDC Construction Corporation of New York|||
+49931|117 Hancock Street|REO|12/21/2012|12/20/2013||2||Restored Homes HDFC||||
+44812|Prospect Court|Low Income Rental|6/29/2011||8/2/2013|59|11688|Prospect Court LLC|Great American Construction|||
+49248|N/A|Low Income Rental|12/30/2013|5/30/2014||39||N/A|Creative Interiors Plus (CIP)|||
+47967|1195 -1199 Fulton Avenue|Article 8A Loan|12/28/2012|12/30/2013||40|||Shamas Contracting Co., Inc.|||
+77|Metro North Gardens|Section 8|8/10/2011|||48||||||
+84|Penn South|Mitchell-Lama|6/24/2011|||2820||||||
+86|Sam Burt Houses|Mitchell-Lama|1/11/2013|||147||Sam Burt Houses, Inc.||||
+89|St. Lukes Housing for the Elderly|LAMP|12/1/2011|||81||St. Luke's Williamsbridge Associates, L.P.||||
+61|St. Marks Rehab|Section 8|3/27/2012|||21||738 ST. MARKS EQUITIES, LLC|Mar Construction Corp.|||
+91|Tivoli Towers|Mitchell-Lama|10/28/2010|||320||||||
+94|Warbasse Houses|Mitchell-Lama|6/29/2012|||2585||||||
+76|Kent Village|Mitchell-Lama|6/10/2011|||534||||||
+78|Mins Plaza|Mitchell-Lama|3/13/2012|||84||||||
+43129|EAST HARLEM SOUTH COOPERATIVE II|Multifamily Homeownership|6/30/2010|||6||East 111 Mezzanine LLC|L+M Builders Group LLC|||
+43187|ABRAHAM RESIDENCE II|LIHTC Year 15|6/24/2010|||41||SURF GATE HOUSING DEVELOPMENT FUND CORPORATION||||
+43214|THIRD WHGA|LIHTC Year 15|6/23/2010|||101||WHGA, Inc.|AP Tek Construction|||
+43791|N/A|HHAP|8/2/2010|||41||N/A||||
+44894|330 WEST 39TH STREET|Inclusionary Housing|11/30/2010|||42||West 39th Street LLC|West 39th Street Development LLC|||
+125|Longwood Residences (SEBCO I and II)|LAMP|6/27/2013|||361|9218|Longwood Residences, LP|Renewal Consruction Services, LLC|||
+124|456 Washington Street|80/20|6/20/2013|||107|5691|Bridge Land West LLC|Monadnock Construction, Inc.|||
+130|Harlem West IV|Extended Affordability|6/14/2013|||93||Urban Home Ownership Corp|Apex Building Company|||
+131|Harlem West III|Extended Affordability|6/14/2013|||70||Urban Home Ownership Corp|Apex Building Company|||
+126|Carmel Apartments|LAMP|6/20/2013|||100||Carmel Apartments LLC|FG-PH Corp.|||
+127|TBM Housing - Scheuer Plaza|LAMP|6/18/2013|||100||Scheuer Plaza L.P.|Notias Construction|||
+48877|Nehemiah Gateway Phase 3B|Small Homes Large Scale|12/30/2013|2/26/2016||81||Nehemiah Housing Development Fund Company, Inc.|Monadnock Construction|||
+48518|186-07 MANGIN AVENUE|REO|10/31/2011|1/4/2013||1||RUN LLC|Horizion Construction|||
+48530|794 BARTHOLDI STREET|REO|12/6/2011|1/14/2013||1||Restored Homes HDFC|Poko Builders LLC|||
+44998|LESC Franklin Ave|Supportive Housing - New Construction|5/16/2012|11/16/2014||99||LESC Franklin Avenue HDFC|J. Pilla Group Ltd.|Yes||
+45676|1344 Clinton Avenue|Supportive Housing - New Construction|6/25/2012|12/31/2013||80||Urban Pathways, Inc.|L. Riso & Sons|Yes||
+48356|Women's Housing & Economic Development Corp.|Article 8A Loan|6/22/2012|7/1/2013||132||Urban Horizon Tax Credit Fund L.P.||||
+48287|Quadrant Properties HDFC - III|Article 8A Loan|6/12/2012|7/1/2014||231||South Bronx Community Lemie Wolfe LLC|Apartment Rehab Corp.|Yes||
+45998|MHANY Hopkinson Sumpter|NSP 2|6/29/2012|12/31/2013||26||MHANY 1999 HDFC||||
+47769|370 Hooper St, Brooklyn|Article 8A Loan|10/26/2012|10/1/2013||6||370 Hooper St Housing Development Fund Corp||||
+47825|Louise Chazin Apartments|LIHTC Year 15|6/28/2012|1/1/2014||45|||Expo Development Corp.|||
+44255|Artspace El Barrio @ P.S. 109|Low Income Rental|6/20/2012|6/20/2014||90|9210|El Barrio Artspace Limited Partnership|Monadnock Construction, Inc.|||
+45781|West 116/117|Low Income Rental|8/2/2012|8/2/2014||111|5000|West 116 Residential LLC|Chatsworth Builders LLC|||
+45001|Praxis White Plains Road|Supportive Housing - New Construction|6/26/2012|12/31/2013||61|||Fazio Contracting|Yes||
+45317|Belmont Commons (SOBRO E. 188th St)|Low Income Rental|1/11/2012|8/21/2013||40|||Delight Construction|||
+49940|139-07 89th Avenue|REO|11/29/2012|11/22/2013||2||Restored Homes HDFC|Horizon Construction|||
+45820|710 EAST 9TH STREET|Supportive Housing - Rehab|6/21/2011|||45||710 East 9th Street Associates, L.P.|C&A GENERAL CONTRACTING CORP.|Yes||
+48899|Mutual Redevelopment Houses, Inc. - Penn South|Article 8A Loan|9/23/2013|9/23/2015||2820||Mutual Redevelopment Houses, Inc.|Empire Control Abatement Inc.|||
+43190|HILLS ASSOCIATES|LIHTC Year 15|6/15/2010|||27||Hills Associates, LP|Builders-R-US|||
+128|Beth Abraham Housing - Scheuer Gardens|LAMP|6/18/2013|||116||Scheuer Gardens L.P.|Notias Construction|||
+132|Boston Road Apartments|Extended Affordability|6/14/2013|||142|12000|Urban Home Ownership Corp|Apex Building Company|||
+133|Terrace Gardens|Extended Affordability|6/28/2013|||198||Terrace Gardens Housing Limited Partnership|Chateau GC LLC|||
+39397|2520-40-60 Batchelder/Kingsbay I|Article 8A Loan|6/30/2009|||540||||||
+48002|Stammtisch|Multifamily Preservation Loan Program|12/20/2013|12/31/2015||46|3036|Stammtisch Associates, L.P.|GKC Industries, Inc.|||
+44454|920 Westchester Avenue|Low Income Rental|6/29/2010|6/28/2012||110|10726|922 Westchester Owners LLC|MJM Construction Services, LLC|||
+45888|2665 Valentine Ave|Article 8A Loan|6/24/2011|||40||2665 Valentine Inc.|R & S Construction Corp.|||
+45907|ST. JOHN'S & ROCHESTER APARTMENTS|LIHTC Year 15|6/29/2011|||82||St. John's Housing Development Fund Corp.||||
+48513|74-34 ROCKAWAY BLVD|REO|8/23/2011|11/30/2012||2||Restored Homes HDFC|Empire Home Developers, Inc.|||
+47960|TBX905 - Fordham Bedford|TPT|6/27/2013|4/1/2015||125||Creston Heights LLC|Galaxy General Contracting|||
+45915|FALCON RESTORATION II|LIHTC Year 15|6/22/2011||7/30/2013|41||La Casa Nuestra Housing Development Fund Corporation|ALMO GROUP CORP.|||
+48132|The Heights - 150th Street|Multifamily Preservation Loan Program|12/19/2013|6/19/2016||67|811|Cloth150th Street LP|US Tech Construction Corp|||
+48579|Alphabet Plaza|Inclusionary Housing|6/13/2013|6/13/2016||135|10000|Alphabet Plaza LLC|Alphabet Plaza LLC|||
+48794|Quadrant Properties HDFC V|Article 8A Loan|6/10/2013|7/1/2015||106||Quadrant Properties Housing Development Fund Company|Apartment Rehabilitation Corporation|Yes||
+59|11 Broadway|New HOP|8/25/2010|||160|340065|11 Broadway Affordable Residential LLC|Congress Builders LLC|||
+60|55 Pierrepont Street|LAMP|12/1/2011|||189||55 Pierrepont LLC|MDG Design & Construction/Adelphi Restoration Corp. |||
+62|Atlantic Yards|New HOP|12/14/2012|||363|3733|Atlantic Yards B2 Owner, LLC|Skanska USA Building Inc.|||
+64|CABS Housing|LAMP|12/1/2011|||72||St. Nicks Alliance||||
+65|Cannon Heights|Mitchell-Lama|10/14/2010|||171||||||
+68|Dayton Tower|Mitchell-Lama|6/23/2011|||1758||||||
+74|Greene Avenue Senior Citizens|LAMP|12/1/2011|||150||Greene Ave Rehabilitation 2012 Bsrc, L.P||||
+48644|CUCS. 600 East 181st Street. Arthur Ave.|Supportive Housing - New Construction|12/19/2013|8/31/2015||108||Arthur Avenue Residence, L.P.|Mega Contracting, Inc.|Yes||
+48012|Soundview Senior|Low Income Rental|12/19/2013|11/19/2014||86||Soundview Senior Housing LLC|Procida Construction|Yes||
+50156|Compass Residences 1A|Multifamily Rental - Mixed|12/23/2013|12/30/2015||110|1758|Compass One A LLC|Monadnock Construction|||
+49338|Compass Residences 1B|Low Income Rental|12/23/2013|12/23/2015||127|3174|Compass One B LLC|Monadnock Construction|||
+50407|East New York Resyndication (BRP)|LIHTC Year 15|12/27/2013|1/1/2016||468||ENY Development LLC|BRP Construction Group LLC|||
+44405|BAM Cultural District North Site- Tower I|Multifamily Rental - Mixed|12/20/2013|10/31/2016||586||BAM Go Developers LLC.|Gotham Construction|||
+50205|Bronx Pro Gazivoda Phase 1|Participation Loan Program|12/23/2013|12/23/2015||269||G&M Realty l LLC|Home Builders 1, L.P.|||
+49173|West End. 2808 Jerome Ave. True Colors 2|Supportive Housing - New Construction|12/30/2013|6/30/2015||31||True Colors Bronx HDFC|DP Group |Yes||
+50181|205 East 92nd Street|Inclusionary Housing|12/23/2013|12/23/2016||231|33935|92nd and 3rd Associates, L.L.C.|Monadnock Construction|||
+50329|424 West 55h Street|Inclusionary Housing|12/30/2013|12/26/2016||17||West of Ninth Limited Partnership|Chateau GC LLC|||
+49690|160 Madison Avenue|Inclusionary Housing|12/5/2013|12/5/2016||319|28200|160 Madison Avenue LLC|M.D. Carlisle Construction Corp.|||
+49706|149 Kent Avenue|Inclusionary Housing|12/20/2013|12/20/2016||164|18358|Kent & Wythe Owners LLLC|CONGRESS BUILDERS LLC|||
+45265|Randolph Houses South / Phase one|Low Income Rental|12/23/2013|12/23/2016||168||Trinity West Harlem Phase One HDFC|Mega Contracting, Inc.|Yes||
+49171|Albert Goodman|HUD Multi-Family Program|12/19/2013|12/19/2014||252||Albert Goodman Housing Development Fund Corporation |Albert Goodman Preservation Builders LLC|||
+48533|KELLY STREET|Overleveraged|12/28/2011||12/18/2012|81|2845||Monadnock Construction|||
+134|Locust Manor Family|Stand Alone Tax Credits|7/31/2013|||54||Locust Manor Family Limited Partnership|D & F Construction Group, Inc.|||
+135|Prince Hall|LAMP|12/19/2013|||98||PH Housing L.P.; PH Housing Development Fund Corporation (nominee)|Arco Management Corp (construction supervisor)|||
+136|Webster E|LAMP|12/19/2013|||79||Webster Building E Realty LLC|Joy Construction |||
