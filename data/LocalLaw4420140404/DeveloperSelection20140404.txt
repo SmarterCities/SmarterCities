@@ -1,0 +1,325 @@
+DeveloperSelectionDWID|ProjectID|Method|RFPName|RFQName|IsDeveloperPrequalified
+505|39264|Application|||No
+308|39369|Application|||No
+257|39399|Application|||No
+531|39402|Request for Qualifications||TPT Round 5 RFQ & TPT Round 6 RFQ|Yes
+483|39480|Application|||No
+235|41408|Application|||No
+154|41493|Application|||No
+203|43105|Application|||No
+424|43276|Application|||No
+137|43311|Application|||No
+263|43312|Application|||No
+175|43313|Application|||No
+411|43388|Application|||No
+255|43566|Application|||No
+120|44072|Direct Negotiation|||No
+492|45239|Application|||No
+240|45586|Application|||No
+122|48516|Direct Negotiation|||No
+311|48517|Direct Negotiation|||No
+296|48520|Direct Negotiation|||No
+305|48522|Request for Proposals|The Neighborhood Stabilization Program 2: Notice of Funding Availability ||No
+152|48524|Direct Negotiation|||No
+234|48528|Direct Negotiation|||No
+91|48529|Direct Negotiation|||No
+112|48531|Direct Negotiation|||No
+504|48537|Request for Qualifications||TPT Round 7 RFQ|Yes
+185|48538|Direct Negotiation|||No
+309|44365|Application|||No
+125|48033|Direct Negotiation|||No
+150|48037|Direct Negotiation|||No
+429|46017|Application|||No
+506|47926|Request for Qualifications||TPT Round 7 RFQ|Yes
+236|48375|Direct Negotiation|||No
+441|48087|Application|||No
+503|47932|Request for Qualifications||TPT Round 8&9 RFQ|Yes
+253|48068|Application|||No
+508|47933|Request for Qualifications||TPT Round 8&9 RFQ|Yes
+335|48380|Application|||No
+469|48305|Application|||No
+211|47799|Application|||No
+398|47821|Application|||No
+356|47865|Application|||No
+431|48452|Application|||No
+183|47774|Application|||No
+151|47775|Application|||No
+247|48633|Direct Negotiation|||No
+264|47886|Request for Qualifications||Multifamily Preservation Program RFQ|Yes
+294|48365|Request for Qualifications||Chinatown Lower East Acquisition Program|Yes
+371|48873|Application|||No
+133|49139|Direct Negotiation|||No
+501|48884|Application|||No
+281|47945|Application|||No
+524|48888|Application|||No
+636|48887|Application|||No
+641|48910|Selected By Another Agency|||No
+605|48755|Application|||No
+630|49270|Application|||No
+616|48733|Application|||No
+564|49517|Application|||No
+634|48892|Application|||No
+586|48891|Application|||No
+585|49275|Application|||No
+147|48744|Application|||No
+118|48623|Application|||No
+618|48730|Application|||No
+676|49272|Application|||No
+578|48681|Application|||No
+587|49060|Application|||No
+604|48685|Application|||No
+598|44865|Application|||No
+628|46264|Application|||No
+104|48739|Application|||No
+208|46262|Application|||No
+597|49273|Application|||No
+109|48555|Application|||No
+567|49576|Application|||No
+201|48743|Application|||No
+558|44420|Application|||No
+583|48690|Application|||No
+606|49070|Application|||No
+601|48677|Application|||No
+594|47838|Application|||No
+342|48689|Application|||No
+516|48415|Application|||No
+623|48765|Application|||No
+224|47770|Application|||No
+334|47824|Application|||No
+439|47826|Application|||No
+358|44423|Request for Proposals|New Foundations Request for Proposals- Round III||No
+395|47822|Application|||No
+427|47873|Application|||No
+547|47866|Application|||No
+434|47867|Application|||No
+464|48126|Application|||No
+432|47882|Application|||No
+514|44373|Application|||No
+254|45961|Application|||No
+479|48086|Application|||No
+546|47831|Application|||No
+482|48390|Application|||No
+550|48060|Application|||No
+205|47798|Application|||No
+271|48521|Application|||No
+359|48532|Application|||No
+599|48890|Application|||No
+633|49628|Application|||No
+612|49569|Application|||No
+596|48686|Application|||No
+635|49103|Application|||No
+590|48754|Application|||No
+639|48896|Application|||No
+565|48766|Application|||No
+589|48889|Application|||No
+572|48660|Application|||No
+577|48625|Request for Qualifications||TPT Round 8&9 RFQ|Yes
+613|48632|Application|||No
+453|47883|Application|||No
+571|44350|Negotiated Sale|||No
+570|48634|Application|||No
+625|48897|Application|||No
+622|47772|Application|||No
+614|48788|Application|||No
+620|48657|Application|||No
+615|48902|Application|||No
+637|48895|Application|||No
+621|48752|Application|||No
+489|48125|Application|||No
+366|47921|Application|||No
+593|48726|Request for Proposals|Hunters Point South, Queens,NY Request for Proposals||No
+592|49143|Request for Proposals|Hunters Point South, Queens,NY Request for Proposals||No
+574|46299|Application|||No
+600|47805|Request for Qualifications||Multifamily Preservation Program RFQ|Yes
+588|49534|Selected by Another Agency|||No
+579|48003|Request for Proposals|The New York City Department of Housing Preservation and Developent and The New York City Housing Authority Affordable Housing for the Bronx Request for Proposals||No
+410|44275|Negotiated Sale|||No
+610|44369|Request for Proposals|Request for Proposals Cornerstone Program Round IV||No
+607|44258|Request for Proposals|Request for Proposals Cornerstone Program Round IV||No
+584|44362|Application|||No
+348|45142|Application|||No
+608|48771|Application|||No
+624|46076|Application|||No
+644|48772|Negotiated Sale|||No
+595|45301|Selected by Another Agency|||No
+355|44345|Negotiated Sale|||No
+632|45677|Application|||No
+393|47843|Application|||No
+381|48414|Application|||No
+533|48423|Application|||No
+250|48425|Application|||No
+495|48514|Application|||No
+496|48515|Application|||No
+409|48540|Application|||No
+440|47477|Application|||No
+100|45336|Selected by Another Agency|||No
+364|44349|Negotiated Sale|||No
+413|44336|Negotiated Sale|||No
+330|45990|Application|||No
+425|44320|Negotiated Sale|||No
+390|44403|Request for Proposals|The New York City Department of Housing Preservation and Developent and The New York City Housing Authority Affordable Housing for the Bronx Request for Proposals||No
+527|44544|Application|||No
+231|44377|Application|||No
+386|45206|Request for Proposals|Request for Proposals 1951 Park Avenue East Harlem, Manhattan||No
+566|45578|Negotiated Sale|||No
+680|49281|Direct Negotiation|||No
+684|49455|Request for Qualifications||TPT Round 2 RFQ|Yes
+563|49010|Request for Qualifications||TPT Round 6 RFQ|Yes
+557|49939|Direct Negotiation|||No
+692|48640|Application|||No
+678|48049|Request for Qualifications||TPT Round 8& 9 RFQ|Yes
+687|48626|Request for Qualifications||TPT Round 4&5 RFQs|Yes
+677|49285|Application|||No
+693|47861|Application|||No
+691|48704|Application|||No
+629|48748|Application|||No
+159|48745|Application|||No
+149|48738|Application|||No
+559|48641|Application|||No
+609|45223|Application|||No
+683|48735|Request for Qualifications||TPT Round 8& 9 RFQ|Yes
+682|48937|Request for Qualifications||TPT Round 8& 9 RFQ|Yes
+602|48928|Application|||No
+626|49276|Application|||No
+694|44306|Application|||No
+667|44888|Application|||No
+685|48013|Request for Qualifications||TPT Round 8& 9 RFQ|Yes
+671|49391|Application|||No
+672|48929|Application|||No
+696|49026|Application|||No
+686|48621|Request for Qualifications||TPT Round 8& 9 RFQ|Yes
+213|48543|Application|||No
+465|48510|Request for Qualifications||NRP RFQ|Yes
+617|47850|Request for Qualifications||Multifamily Preservation Program RFQ|Yes
+575|47767|Request for Qualifications||TPT Round 8&9 RFQ|Yes
+555|47914|Request for Qualifications||TPT Round 8&9 RFQ|Yes
+561|49909|Direct Negotiation|||No
+206|45846|Application|||No
+470|45852|Application|||No
+518|45862|Request for Qualifications||TPT Round 6 RFQ|Yes
+502|45863|Request for Qualifications||TPT Round 7 RFQ|Yes
+467|45872|Application|||No
+539|45884|Application|||No
+218|45887|Application|||No
+256|45889|Application|||No
+241|45890|Application|||No
+190|45894|Application|||No
+454|45902|Application|||No
+497|45906|Application|||No
+450|45908|Application|||No
+478|45909|Application|||No
+486|45924|Application|||No
+538|44254|Negotiated Sale|||No
+654|50568|Direct Negotiation|||No
+560|48254|Request for Qualifications||TPT Round 8&9 RFQ|Yes
+690|44303|Selected by Another Agency|||No
+475|48444|Application|||No
+549|48783|Application|||No
+591|49058|Application|||No
+603|48639|Application|||No
+568|49575|Application|||No
+569|48678|Application|||No
+562|48676|Application|||No
+428|47880|Application|||No
+326|46061|Application|||No
+321|47844|Application|||No
+580|48683|Application|||No
+581|48886|Application|||No
+279|48809|Application|||No
+640|48760|Application|||No
+638|47862|Application|||No
+642|48909|Selected by Another Agency|||No
+171|44807|Application|||No
+631|44249|Negotiated Sale|||No
+643|45280|Application|||No
+339|44241|Request for Proposals|New Foundations Request for Proposals- Round III||No
+493|48559|Application|||No
+368|44366|Application|||No
+573|45675|Application|||No
+695|49481|Application|||No
+627|48746|Application|||No
+408|47652|Negotiated Sale|||No
+619|49067|Application|||No
+660|50602|Selected by Another Agency|||No
+661|50414|Application|||No
+553|49931|Direct Negotiation|||No
+466|44812|Application|||No
+658|49248|Application|||No
+124|47967|Application|||No
+68|77|Application|||No
+60|84|Application|||No
+56|86|Application|||No
+50|89|Application|||No
+49|61|Application|||No
+47|91|Application|||No
+45|94|Application|||No
+71|76|Application|||No
+67|78|Application|||No
+367|43129|Request for Proposals|Request for Proposals Cornerstone Program Round IV||No
+319|43187|Application|||No
+517|43214|Application|||No
+99|43791|Selected By Another Agency|||No
+232|44894|Application|||No
+11|125|Application|||No
+12|124|Application|||No
+7|130|Application|||No
+6|131|Application|||No
+10|126|Application|||No
+9|127|Application|||No
+688|48877|Negotiated Sale|||No
+184|48518|Direct Negotiation|||No
+291|48530|Direct Negotiation|||No
+415|44998|Application|||No
+144|45676|Application|||No
+551|48356|Application|||No
+468|48287|Application|||No
+436|45998|Request for Proposals|The Neighborhood Stabilization Program 2: Notice of Funding Availability ||No
+238|47769|Application|||No
+423|47825|Application|||No
+323|44255|Negotiated Sale|||No
+540|45781|Application|||No
+462|45001|Application|||No
+329|45317|Application|||No
+556|49940|Direct Negotiation|||No
+276|45820|Application|||No
+689|48899|Application|||No
+392|43190|Application|||No
+8|128|Application|||No
+5|132|Application|||No
+4|133|Application|||No
+214|39397|Application|||No
+679|48002|Request for Qualifications||TPT Round 4,5,& 7 RFQs|Yes
+310|44454|Application|||No
+216|45888|Application|||No
+490|45907|Application|||No
+283|48513|Direct Negotiation|||No
+576|47960|Request for Qualifications||TPT Round 8&9 RFQ|Yes
+374|45915|Application|||No
+664|48132|Request for Qualifications||TPT Round 8& 9 RFQ|Yes
+611|48579|Application|||No
+582|48794|Application|||No
+89|59|Application|||No
+88|60|Application|||No
+87|62|Application|||No
+84|64|Application|||No
+83|65|Application|||No
+80|68|Application|||No
+72|74|Application|||No
+666|48644|Application|||No
+655|48012|Request for Proposals|The New York City Department of Housing Preservation and Development and the New York City Housing Authority Affordable Housing for the Bronx Request for Proposals||No
+668|50156|Application|||No
+657|49338|Application|||No
+665|50407|Application|||No
+662|44405|Request for Proposals|BAM Cultural District||No
+669|50205|Application|||No
+663|49173|Application|||No
+673|50181|Application|||No
+659|50329|Application|||No
+674|49690|Application|||No
+675|49706|Application|||No
+656|45265|Request for Proposals|Randolph Houses||No
+670|49171|Application|||No
+406|48533|Request for Qualifications||Multifamily Preservation Program RFQ|Yes
+653|134|Application|||No
+652|135|Application|||No
+651|136|Application|||No
