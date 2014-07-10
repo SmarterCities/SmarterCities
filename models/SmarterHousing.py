@@ -70,14 +70,14 @@ inputs = [{'entity':'percent_by_income[Extremely_Low_Income]',
 outputs = ['total_taxes',
            'debt',
            'Housing_Units[Extremely_Low_Income]',
-           'Housing_Units[Very_Low_Income]',
-           'Housing_Units[Low_Income]',
-           'Housing_Units[Moderate_Income]',
-           'Housing_Units[Middle_Income]',
-           'Housing_Units[High_Income]',
+           #'Housing_Units[Very_Low_Income]',
+           #'Housing_Units[Low_Income]',
+           #'Housing_Units[Moderate_Income]',
+           #'Housing_Units[Middle_Income]',
+           #'Housing_Units[High_Income]',
             # 'total_expenditures', # <-- this one didn't work!
            ]
-steps = 10 #1600  # number of time steps
+steps = 2 #1600  # number of time steps
 
 
 #what do the graphs look like?
@@ -95,7 +95,10 @@ def request():
                                    'min':i['min'],
                                    'max':i['max'],
                                    'value':i['currentValue']} for i in inputs],
-                       "buttons":[] })
+                       "buttons":[],
+                       "rectangles":[{"upper_left":[40.795296, -73.968362],
+                                      "lower_right":[40.80, -73.97]}],
+                                      "color":"blue" })
     
 def work(data):
     """
@@ -103,8 +106,8 @@ def work(data):
     of values corresponding to each input parameter.
     """
     try:
-        if len(data) > len(inputs): # only except one value per parameter
-            raise Exception, data
+        if len(data) != len(inputs): # only except one value per parameter
+            raise Exception, "need to supply exactly "+str(len(inputs))+" inputs"
             
         data = map(int,map(float,data))  # convert strings to floats to ints
         
@@ -158,6 +161,7 @@ def work(data):
             
             graph = {}
             graph['title']=response["entity"]
+            response['values'] = response['values'][::100]
             graph['x']=range(len(response['values']))
             graph['y']=response['values']
             graph['xlabel'] = xlabel

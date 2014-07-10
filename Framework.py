@@ -41,11 +41,15 @@ def input_(model_file):
             slider["value"] = value
         
         objects["sliders"].append(slider)
+        
 
     #3.2 build button objects
     objects["buttons"] = {}
     for button in inputs["buttons"]:
         continue   # not implemented yet....
+        
+    #3.3 build rectangle objections
+    objects["rectangle"] = inputs["rectangles"]
 
     #4. return input objects to GUI
     return json.dumps(objects)
