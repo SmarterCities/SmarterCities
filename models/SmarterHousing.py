@@ -70,19 +70,18 @@ inputs = [{'entity':'percent_by_income[Extremely_Low_Income]',
 outputs = ['total_taxes',
            'debt',
            'Housing_Units[Extremely_Low_Income]',
-           #'Housing_Units[Very_Low_Income]',
-           #'Housing_Units[Low_Income]',
-           #'Housing_Units[Moderate_Income]',
-           #'Housing_Units[Middle_Income]',
-           #'Housing_Units[High_Income]',
+           'Housing_Units[Very_Low_Income]',
+           'Housing_Units[Low_Income]',
+           'Housing_Units[Moderate_Income]',
+           'Housing_Units[Middle_Income]',
+           'Housing_Units[High_Income]',
             # 'total_expenditures', # <-- this one didn't work!
            ]
-steps = 2 #1600  # number of time steps
+steps = 2 #1600  # number of time steps #this doesn't seem to matter
 
 
 #what do the graphs look like?
 xlabel = 'years'
-ylabel = 'revenue ($)'
 
 
 def request():
@@ -165,7 +164,7 @@ def work(data):
             graph['x']=range(len(response['values']))
             graph['y']=response['values']
             graph['xlabel'] = xlabel
-            graph['ylabel'] = ylabel
+            graph['ylabel'] = response["entity"]
             graphs.append(graph)
         
         #stop the simulation
