@@ -81,8 +81,8 @@ steps = 2 #1600  # number of time steps
 
 
 #what do the graphs look like?
-xlabel = 'hours'
-ylabel = 'blood concentration'
+xlabel = 'years'
+ylabel = 'revenue ($)'
 
 
 def request():
