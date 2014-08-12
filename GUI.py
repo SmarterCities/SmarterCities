@@ -75,7 +75,11 @@ class gui (Frame):
         #objects = Framework.input_(self.file_for[model])
         cmd = 'python Framework.py {0} input'.format(self.file_for[model])      
         output = os.popen(cmd).read().strip()
-        objects = json.loads(output)
+        try:
+            objects = json.loads(output)
+        except ValueError:
+            print 'Command "{0}" returned non-JSON object: "{1}"'.format(cmd,output)
+            return
         
         self.control_variables[model] = []
         for slider in objects["sliders"]:
