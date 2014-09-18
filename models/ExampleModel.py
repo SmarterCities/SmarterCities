@@ -100,7 +100,10 @@ def work(data):
         
         return json.dumps([graph1, graph2, graph3])
     except ValueError:
-        print 'data provided not a float'
+        return json.dumps({
+            'error':'data provided not a float',
+            'data':data
+            })
 
 #these are necessary for calling the Model from the command line
 try:

@@ -4,16 +4,22 @@ Created on Sun May 18 08:34:11 2014
 
 @author: Lucio
 
-Example GUI for use with Framework.py. When run at the command
+Example GUI for use with smartercitiesapi. When run at the command
 line, the GUI displays the known models. If you click on a model
-the GUI will use the framework to determine the GUI components
+the GUI will use the smartercities-api to determine the GUI components
 and their initial values. Clicking the 'run' button will call
-the Framework to run the model with the values in the sliders.
+the smartercities-api to run the model with the values in the sliders.
 Output from the model will be presented in a new Frame attached
 to the GUI.
 
 My (lucio) intention is that someone will build a web equivalent
 of this. 
+
+!!!
+Update 9-18-14: framework.py was changed to smartercitiesapi.py and 
+changed so that it would work as an API with flask and BlueMix. 
+Consequently this GUI no longer works and is left only for reference.
+!!!
 
 """
 
@@ -21,7 +27,7 @@ of this.
 from Tkinter import *
 import tkMessageBox
 import time
-import Framework
+import smartercitiesapi
 import json
 import os
 
@@ -72,10 +78,10 @@ class gui (Frame):
         b.pack(side="top", pady=5, anchor='w')
         
         #grab parameter objects from model
-        #objects = Framework.input_(self.file_for[model])
-        cmd = 'python Framework.py {0} input'.format(self.file_for[model])      
-        output = os.popen(cmd).read().strip()
-        objects = json.loads(output)
+        objects = smartercitiesapi.input_(self.file_for[model])
+        #cmd = 'python smartercitiesapi.py {0} input'.format(self.file_for[model])      
+        #output = os.popen(cmd).read().strip()
+        #objects = json.loads(output)
         
         self.control_variables[model] = []
         for slider in objects["sliders"]:
@@ -95,10 +101,10 @@ class gui (Frame):
     def run_model(self,model):
         """ Run *model* with parameters in the control variables"""
         parameters = [str(v.get()) for v in self.control_variables[model]]
-        #graphs = Framework.output(self.file_for[model], parameters)
-        cmd = 'python Framework.py {0} output {1}'.format(self.file_for[model], ' '.join(parameters))      
-        output = os.popen(cmd).read().strip()
-        graphs = json.loads(output)
+        graphs = smartercities-api.output(self.file_for[model], parameters)
+        #cmd = 'python smartercitiesapi.py {0} output {1}'.format(self.file_for[model], ' '.join(parameters))      
+        #output = os.popen(cmd).read().strip()
+        #graphs = json.loads(output)
         try:
             import matplotlib.pyplot as plt
             for graph in graphs:

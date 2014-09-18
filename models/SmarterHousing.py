@@ -106,7 +106,7 @@ def work(data):
     """
     try:
         if len(data) != len(inputs): # only except one value per parameter
-            raise Exception, "need to supply exactly "+str(len(inputs))+" inputs"
+            raise ValueError, "need to supply exactly "+str(len(inputs))+" inputs. Got "+str(len(data))
             
         data = map(int,map(float,data))  # convert strings to floats to ints
         
@@ -176,10 +176,11 @@ def work(data):
             raise Exception, dictionary
         
         return json.dumps(graphs)
-    except ValueError:
-        return 'data provided not a float:',data
-    except urllib2.HTTPError:
-        return 'HTTP Error: query = '+query
+    except Exception as e:
+        return json.dumps({
+            'success':False,
+            'error':str(e)
+            })
 
 try:
     action = sys.argv[1]         
@@ -188,6 +189,9 @@ try:
     elif action == 'work':
         print work(sys.argv[2:])
     else:
-        print 'Unknown action provided:',action
+        json.dumps({
+            'success':False,
+            'error': 'Unknown action:{0}'.format(action)
+            })
 except IndexError:
     json.dumps({"error":"True"})

@@ -1,0 +1,67 @@
+
+/* Page structures */
+.body #header { width: 90%; }
+.body #map { width: 90%; }
+.body #output { width: 90%; }
+.body #buttons { width: 90%; }
+
+.body {
+background-color: #0099FF;
+background-image: url(images/background.png);
+margin: 50px;
+font:15px arial,sans-serif;
+}
+
+#main {
+padding: 0px;
+border: 10px solid #000000;
+margin: 10px;
+background-color: #FFFFFF;
+background-clip: content-box;
+border-radius:25px;
+}
+#main h1 {
+color: 000066;
+font-weight: 100;
+text-align: center;
+font-family: 'Playfair Display', serif;
+font-size: 36pt;
+}
+#main h2 {
+font-weight: 100;
+}
+#main h3 {
+color: #000066;
+}
+
+#map {
+width:600px;
+height:300px;
+padding: 10px;
+border: 2px solid #000000;
+margin: 20px;
+background-color: #FFFFFF;
+background-clip: content-box;
+border-radius:10px;
+}
+path {
+stroke: white;
+stroke-width: 2px;
+}
+
+#buttons {
+padding: 10px;
+border: 2px solid #000000;
+margin: 10px;
+background-color: #FFFFFF;
+background-clip: content-box;
+border-radius:10px;
+}
+
+#buttons button{
+width: 100px;
+height: 100px;
+margin: 20px;
+border-radius: 5px;
+background-color: #B5B5B6;
+}
