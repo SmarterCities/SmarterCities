@@ -78,10 +78,21 @@ class gui (Frame):
         b.pack(side="top", pady=5, anchor='w')
         
         #grab parameter objects from model
+<<<<<<< HEAD
         objects = smartercitiesapi.input_(self.file_for[model])
         #cmd = 'python smartercitiesapi.py {0} input'.format(self.file_for[model])      
         #output = os.popen(cmd).read().strip()
         #objects = json.loads(output)
+=======
+        #objects = Framework.input_(self.file_for[model])
+        cmd = 'python Framework.py {0} input'.format(self.file_for[model])      
+        output = os.popen(cmd).read().strip()
+        try:
+            objects = json.loads(output)
+        except ValueError:
+            print 'Command "{0}" returned non-JSON object: "{1}"'.format(cmd,output)
+            return
+>>>>>>> FETCH_HEAD
         
         self.control_variables[model] = []
         for slider in objects["sliders"]:

@@ -59,7 +59,8 @@ def request():
                                    "name":"AMI 5",
                                    "value":15},
                                    ],
-                        "buttons":[] })
+                        "buttons":[],
+						"rectangles":[]})
     
 def work(data):
     """

@@ -41,7 +41,8 @@ def request():
                                    'min':i['min'],
                                    'max':i['max'],
                                    'value':i['currentValue']} for i in inputs],
-                       "buttons":[] })
+                       "buttons":[],
+					   "rectangles":[]})
     
 def work(data):
     """
