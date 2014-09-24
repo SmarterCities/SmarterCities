@@ -13,30 +13,12 @@
 </head>
 
 <body class="body">
-
-    <div id="main">
     
-    <h1>SmarterCities</h1>
+    <?php include('website/header.php'); ?>
+	 
+	<?php include('website/application.php'); ?>
 
-	<div id = 'map'>
-	</div>
-    <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>  
-    <script>
-  	var map = L.map('map').setView([40.706363, -74.009096], 11);
-
-  		L.tileLayer('https://{s}.tiles.mapbox.com/v3/seanluciotolentino.jhknj4m5/{z}/{x}/{y}.png', {
-		    attribution: 'Attribution goes here'
-		}).addTo(map);
-    </script>
-
-    <div id = 'buttons'>
-    <button type="button">SmarterHousing</button>
-    <button type="button">ExampleModel</button>
-    <button type="button">Affordable</button>
-    </div>
-
-    </div> <!-- end #main -->
+	<?php include('website/footer.php'); ?>
 
 </body>
 </html>

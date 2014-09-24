@@ -1,10 +1,4 @@
 SmarterCities
 =============
 
-Putting simulation and modeling in the hands of the citizens of New York City. Check out our [BigApps page](http://smartercitiesbetanyc.splashthat.com/).
-
-To run this initial model try:
-
-```
-python GUI.py
-```
+This is the code repository for SmarterCities, an application that aims to to simulation and modeling in the hands of citizens of New York City and other metropolitan areas. Full documentation is available on our website at http://smartercities.mybluemix.net/api

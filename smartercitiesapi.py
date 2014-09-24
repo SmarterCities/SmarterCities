@@ -24,7 +24,7 @@ models = {"ExampleModel":"ExampleModel.py", "SmarterHousing":"SmarterHousing.py"
 def index():
     return jsonify({
         'title': 'SmarterCities',
-        'readme': 'Visit https://github.com/seanluciotolentino/smartercities for more info'
+        'readme': 'Visit https://smartercities.mybluemix.net/api for info on using the API'
         })
 
 @app.route("/input/")
