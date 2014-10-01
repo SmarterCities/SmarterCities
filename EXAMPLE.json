@@ -1,0 +1,91 @@
+{
+  "buttons": {}, 
+  "model": "SmarterHousing", 
+  "rectangle": [
+    {
+      "lower_right": [
+        40.8, 
+        -73.97
+      ], 
+      "upper_left": [
+        40.795296, 
+        -73.968362
+      ]
+    }
+  ], 
+  "sliders": [
+    {
+      "max": 100, 
+      "min": 0, 
+      "name": "percent_by_income[Extremely_Low_Income]", 
+      "value": 16.66
+    }, 
+    {
+      "max": 100, 
+      "min": 0, 
+      "name": "percent_by_income[Very_Low_Income]", 
+      "value": 16.66
+    }, 
+    {
+      "max": 100, 
+      "min": 0, 
+      "name": "percent_by_income[Low_Income]", 
+      "value": 16.67
+    }, 
+    {
+      "max": 100, 
+      "min": 0, 
+      "name": "percent_by_income[Moderate_Income]", 
+      "value": 16.67
+    }, 
+    {
+      "max": 100, 
+      "min": 0, 
+      "name": "percent_by_income[Middle_Income]", 
+      "value": 16.67
+    }, 
+    {
+      "max": 100, 
+      "min": 0, 
+      "name": "percent_by_income[High_Income]", 
+      "value": 16.67
+    }, 
+    {
+      "max": 10000, 
+      "min": 0, 
+      "name": "Housing_Units[Extremely_Low_Income]", 
+      "value": 1000
+    }, 
+    {
+      "max": 10000, 
+      "min": 0, 
+      "name": "Housing_Units[Very_Low_Income]", 
+      "value": 1000
+    }, 
+    {
+      "max": 10000, 
+      "min": 0, 
+      "name": "Housing_Units[Low_Income]", 
+      "value": 1000
+    }, 
+    {
+      "max": 10000, 
+      "min": 0, 
+      "name": "Housing_Units[Moderate_Income]", 
+      "value": 1000
+    }, 
+    {
+      "max": 10000, 
+      "min": 0, 
+      "name": "Housing_Units[Middle_Income]", 
+      "value": 1000
+    }, 
+    {
+      "max": 10000, 
+      "min": 0, 
+      "name": "Housing_Units[High_Income]", 
+      "value": 1000
+    }
+  ], 
+  "success": true
+}
