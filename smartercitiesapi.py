@@ -1,12 +1,6 @@
 """
-Framework is called by the web GUI. The web gui should
-request to use a particular bob (supplied as argv[1]).
 
-Example uses:
-
-python Framework.py lucio input
-
-python Framework.py lucio output 11
+API for SmarterCities application. 
 
 """
 
@@ -15,12 +9,15 @@ import os
 import json
 import urllib2
 from flask import Flask, request, jsonify
+from flask_cors import CORS
 
 app = Flask(__name__)
+cors = CORS(app)
 
 models = {"ExampleModel":"ExampleModel.py", "SmarterHousing":"SmarterHousing.py"}
 
 @app.route("/")
+#@cross_origin()
 def index():
     return jsonify({
         'title': 'SmarterCities',
@@ -105,18 +102,6 @@ def output(model=None):
         return jsonify({
             'error': 'unknown model:{0}'.format(model),
             })
-#    else:
-#        try:
-#            return jsonify({
-#                'success':True,
-#                'data':request.args
-#                })
-#        except ValueError:
-#            return jsonify({
-#                'error': 'request key didnt work',
-#                'response': model
-#            })
-        
     
     #6. run model with data
     model_file = models[model]
@@ -130,20 +115,3 @@ port = os.getenv('VCAP_APP_PORT', '5000')
 if __name__ == '__main__':
     #app.debug = True
     app.run(host='0.0.0.0', port=int(port))
-
-#known_data_sets = {'311':'http://data.cityofnewyork.us/resource/erm2-nwe9.json?'}
-#if __name__ == '__main__':
-#    try:    
-#        model_file = sys.argv[1]  # the bob that the user wants to use
-#        action = sys.argv[2]
-#    except IndexError:
-#        sys.exit('IndexError: Not enough input provided')
-#    
-#    if action == 'input':
-#        #1. GUI requests the use of a model
-#        print input_(model_file)
-#    elif action == 'output':
-#        #2. 
-#        print output(model_file, sys.argv[3:])
-#    else:
-#        print "Unknown Action:",action

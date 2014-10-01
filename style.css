@@ -1,13 +1,10 @@
 /* Page structures */
-.body #header { width: 100%; }
-.body #application { width: 100%; }
 .body #footer { width: 100%; }
 
 .body {
 background-color: #FFFFFF;
 background-image: url(images/background.png);
-background-size: 100%
-font:20px arial,sans-serif;
+background-size: 100%;
 }
 
 /* header and foot */
@@ -16,34 +13,26 @@ font:20px arial,sans-serif;
 background-color: #000000;
 color: #FFFFFF;
 font-family: 'Playfair Display', serif;
-}
-#header #icon {
-width:50%;
-height:75px;
-float:left;
-background: inherit;
-}
-#header #links{
-width:50%;
-height:75px;
-float:right;
-background: inherit;
-text-align: right;
-}
-#header a {
-padding:10px;
-text-decoration:none;
-background-color:#f1f1f1;
-}
-#header a:hover {
-background-color:#bababa;
-color:#FFFFFF;
-}
-#header a:clicked {
-background-color:#bababa;
-color:#FFFFFF;
+margin: 10px;
+padding: 10px;
+border-radius:5px;
 }
 
+#header a {
+padding:20px;
+text-decoration:none;
+color: white;
+}
+
+#introduction {
+margin: 50px;
+padding: 10px;
+background-color: black;
+opacity: 0.8;
+border-radius: 5px;
+color: white;
+width: 700px;
+}
 
 #footer {
 background-color: #000000;
@@ -52,6 +41,13 @@ height:75px;
 }
 
 /* application */
+#application{
+background: white;
+margin: 20px;
+border-radius: 5px;
+padding: 20px;
+}
+
 #map {
 width:50%;
 height:300px;
@@ -67,25 +63,24 @@ stroke: white;
 stroke-width: 2px;
 }
 
-#buttons {
+#application #buttons {
 width:50%
 border-radius:10px;
 }
-#buttons button{
-width: 150px;
+#application button{
+width: 200px;
 height: 100px;
 margin: 20px;
 border-radius: 5px;
-background-color: #8888FF;
+background-color: #BDBDCA;
 font-family: 'Playfair Display';
 font-size: 14pt;
-border-color: blue;
+border-color: rgb(108, 108, 117);
+padding: 20px;
 }
 
 #input {
 width: 300px;
 height: 100px;
 margin: 20px;
-border-radius: 5px;
-background-color: #B5B5B6;
 }

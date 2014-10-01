@@ -15,10 +15,10 @@
 <body class="body">
     
     <?php include('website/header.php'); ?>
-
-    <?php include('website/introduction.php'); ?>
 	 
 	<?php include('website/application.php'); ?>
+
+	<?php include('website/footer.php'); ?>
 
 </body>
 </html>

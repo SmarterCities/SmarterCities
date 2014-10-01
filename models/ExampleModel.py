@@ -10,6 +10,7 @@ the agency name is NYPD.
 
 import sys
 import json
+from flask import jsonify
 
 def request():
     """
@@ -17,28 +18,10 @@ def request():
     BOB wants.  Here we want a single slider that reflects the
     number of 311 calls with agent_name=NYPD. The framework 
     will make the API call for us.
-    """
-    #If I want the Framework to make API calls I need to supply
-    #a JSON object like this one:
-#    return json.dumps({"sliders":[{"data":"311", 
-#                                   "keys":["agency_name"],
-#                                   "values":["NYPD"],
-#                                   "process":"count",
-#                                   "min":0,
-#                                   "max":20,
-#                                   "name":"NYPD calls"}, 
-#                                  {"data":"311",
-#                                   "keys":["agency_name"],
-#                                   "values":["TLC"],
-#                                   "process":"count",
-#                                   "min":0,
-#                                   "max":50,
-#                                   "name":"TLC calls"}],
-#                        "buttons":[] })
-    
+    """    
     #If I know the values for the sliders / button a priori
     #then I can supply a JSON object like this:
-    return json.dumps({"sliders":[{"min":0,
+    return jsonify({"sliders":[{"min":0,
                                    "max":100,
                                    "name":"AMI 1",
                                    "value":10},
@@ -68,43 +51,91 @@ def work(data):
     assumes call volume will increase linearly for the next
     10 weeks.
     """
-    try:
-        if len(data) != 5:
-            raise Exception, data
-        
-        data = map(float,data)
-        slope = sum(data)
-        
-        #Tax Revenue
-        graph1 = {}
-        graph1["x"] = map(str, range(10))
-        graph1["y"] = [str(slope*x) for x in range(10)]
-        graph1["title"] = ''
-        graph1["xlabel"] = ''
-        graph1["ylabel"] = ''
-        
-        #Cost of services
-        graph2 = {}
-        graph2["x"] = map(str, range(10))
-        graph2["y"] = [str((-slope*x)+slope) for x in range(10)]
-        graph2["title"] = ''
-        graph2["xlabel"] = ''
-        graph2["ylabel"] = ''
-        
-        #Amount of Debt
-        graph3 = {}
-        graph3["x"] = map(str, range(10))
-        graph3["y"] = [str(x+slope) for x in range(10)]
-        graph3["title"] = 'Effects'
-        graph3["xlabel"] = 'Years'
-        graph3["ylabel"] = 'Dollars'        
-        
-        return json.dumps([graph1, graph2, graph3])
-    except ValueError:
-        return json.dumps({
-            'error':'data provided not a float',
-            'data':data
-            })
+    return jsonify({
+					"type": "serial",
+					"pathToImages": "http://cdn.amcharts.com/lib/3/images/",
+					"categoryField": "category",
+					"startDuration": 1,
+					"categoryAxis": {
+						"gridPosition": "start"
+					},
+					"trendLines": [],
+					"graphs": [
+						{
+							"balloonText": "[[title]] of [[category]]:[[value]]",
+							"bullet": "round",
+							"id": "AmGraph-1",
+							"title": "graph 1",
+							"type": "smoothedLine",
+							"valueField": "column-1"
+						},
+						{
+							"balloonText": "[[title]] of [[category]]:[[value]]",
+							"bullet": "square",
+							"id": "AmGraph-2",
+							"title": "graph 2",
+							"type": "smoothedLine",
+							"valueField": "column-2"
+						}
+					],
+					"guides": [],
+					"valueAxes": [
+						{
+							"id": "ValueAxis-1",
+							"title": "Axis title"
+						}
+					],
+					"allLabels": [],
+					"balloon": {},
+					"legend": {
+						"useGraphSettings": true
+					},
+					"titles": [
+						{
+							"id": "Title-1",
+							"size": 15,
+							"text": "Chart Title"
+						}
+					],
+					"dataProvider": [
+						{
+							"category": "category 1",
+							"column-1": 8,
+							"column-2": 5
+						},
+						{
+							"category": "category 2",
+							"column-1": "3",
+							"column-2": 7
+						},
+						{
+							"category": "category 3",
+							"column-1": "0",
+							"column-2": 3
+						},
+						{
+							"category": "category 4",
+							"column-1": 1,
+							"column-2": 3
+						},
+						{
+							"category": "category 5",
+							"column-1": 2,
+							"column-2": 1
+						},
+						{
+							"category": "category 6",
+							"column-1": 3,
+							"column-2": 2
+						},
+						{
+							"category": "category 7",
+							"column-1": 6,
+							"column-2": 8
+						}
+					]
+				}
+		)
 
 #these are necessary for calling the Model from the command line
 try:
