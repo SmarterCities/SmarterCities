@@ -31,10 +31,12 @@ def input_(model=None):
     if model is None:
         return jsonify({
             'error': 'model not provided -- use /input/model_name',
+            'known models': models.keys()
             })
     elif model not in models:
         return jsonify({
             'error': 'unknown model:{0}'.format(model),
+            'known models': models.keys()
             })
             
     #2. request data needs from bob
@@ -96,11 +98,13 @@ def process(function, dictionary):
 def output(model=None):
     if model is None:
         return jsonify({
-            'error': 'model not provided -- use /input/model_name',
+            'error': 'model not provided -- use /output/model_name',
+            'known models': models.keys()
             })
     elif model not in models:
         return jsonify({
             'error': 'unknown model:{0}'.format(model),
+            'known models': models.keys()
             })
     
     #6. run model with data

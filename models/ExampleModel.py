@@ -10,7 +10,6 @@ the agency name is NYPD.
 
 import sys
 import json
-from flask import jsonify
 
 def request():
     """
@@ -21,7 +20,7 @@ def request():
     """    
     #If I know the values for the sliders / button a priori
     #then I can supply a JSON object like this:
-    return jsonify({"sliders":[{"min":0,
+    return json.dumps({"sliders":[{"min":0,
                                    "max":100,
                                    "name":"AMI 1",
                                    "value":10},
@@ -51,7 +50,7 @@ def work(data):
     assumes call volume will increase linearly for the next
     10 weeks.
     """
-    return jsonify({
+    return json.dumps({
 					"type": "serial",
 					"pathToImages": "http://cdn.amcharts.com/lib/3/images/",
 					"categoryField": "category",
@@ -88,7 +87,7 @@ def work(data):
 					"allLabels": [],
 					"balloon": {},
 					"legend": {
-						"useGraphSettings": true
+						"useGraphSettings": True
 					},
 					"titles": [
 						{
