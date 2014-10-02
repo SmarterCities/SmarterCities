@@ -10,7 +10,10 @@
   <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
   <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
   <link href='http://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css'>
-</head>
+  <link rel="stylesheet" href="d3.slider.css"/>
+  <script type="text/javascript" src="http://d3js.org/d3.v3.min.js"></script>
+  <script type="text/javascript" src="d3.slider.js"></script>
+  </head>
 
 <body class="body">
     

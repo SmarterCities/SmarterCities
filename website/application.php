@@ -20,11 +20,43 @@
 	
 	<h1> 2. Set the parameters you want to use: </h1>
 	<div id = 'input'>
-	</div>
 
+		<script>
+			var test = 10;
+
+			d3.json("EXAMPLE.json", function(error, data){
+				var sliderArray = [];
+				(data.sliders).forEach(function(x){
+					sliderArray.push(x);
+					
+				
+				});
+
+				console.log(sliderArray);
+
+    	d3.select("div#input").selectAll("div")
+					.data(sliderArray)
+					.enter().append("div")
+	    		.attr("height", "20px")
+				.attr("class", "sliders")
+				.attr("z-index", "99999")
+				.call(d3.slider().on("slide", function(evt, value) {
+						d3.select('#inputvalue').text(value);
+			}));
+		
+		});
+
+			
+
+		</script>
+	</div>
+	<div id="inputvalue">
+	</div>
+	<div>
      <h1> 3. Run the model: </h1>
 	<button onclick="output()" type="button">Run</button>
-
+</div>
+<div>
      <h1> 4. Review the output: </h1>
 	<div id = 'map'>
 	</div>
@@ -43,6 +75,6 @@
       	//marker.bindPopup("<b>I'm a marker!</b><br>");
 	}
 	</script>
-
+</div>
 
 </div>
