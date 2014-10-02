@@ -9,49 +9,39 @@
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 	<script>
 	function input(model) {
-        $.get("http://smartercities-api.mybluemix.net/input",{}).then(function(r){
-            var input_box = document.getElementById('input');
-            	input_box.innerHTML=r;
-        })
+        $.get("http://smartercities-api.mybluemix.net/input/"+model,{}).then(function(data){
+            //var input_box = document.getElementById('input');
+            d3.select('#input').text("");
+            d3.select('#inputvalue').text("");
+            console.log(data);
+			
+			var sliderArray = [];
+			(data.sliders).forEach(function(x){
+				sliderArray.push(x);
+			});
 
-        //$.getScript("http://smartercities-api.mybluemix.net/input/"+model)
+			console.log(sliderArray);
+
+			d3.select("div#input").selectAll("div")
+				.data(sliderArray)
+				.enter().append("div")
+    		.attr("height", "20px")
+			.attr("class", "sliders")
+			.attr("z-index", "99999")
+			.call(d3.slider().on("slide", function(evt, value) {
+					d3.select('#inputvalue').text(value);
+			}));
+        })
 	}
 	</script>
 	
 	<h1> 2. Set the parameters you want to use: </h1>
 	<div id = 'input'>
-
-		<script>
-			var test = 10;
-
-			d3.json("EXAMPLE.json", function(error, data){
-				var sliderArray = [];
-				(data.sliders).forEach(function(x){
-					sliderArray.push(x);
-					
-				
-				});
-
-				console.log(sliderArray);
-
-    	d3.select("div#input").selectAll("div")
-					.data(sliderArray)
-					.enter().append("div")
-	    		.attr("height", "20px")
-				.attr("class", "sliders")
-				.attr("z-index", "99999")
-				.call(d3.slider().on("slide", function(evt, value) {
-						d3.select('#inputvalue').text(value);
-			}));
-		
-		});
-
-			
-
-		</script>
 	</div>
+
 	<div id="inputvalue">
 	</div>
+
 	<div>
      <h1> 3. Run the model: </h1>
 	<button onclick="output()" type="button">Run</button>
