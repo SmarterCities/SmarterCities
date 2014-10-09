@@ -2,9 +2,9 @@
 
     <h1> 1. Choose a model: </h1>
     <div id = 'buttons'>
-		<button onclick="input('SmarterHousing')" type="button">SmarterHousing</button>
-		<button onclick="input('ExampleModel')" type="button">ExampleModel</button>
-		<button onclick="input('Affordable')" type="button">Affordable</button>
+		<button onclick="input('SmarterHousing')" type="button">SmarterHousing<img src="images/home-icon.png"></button>
+		<button onclick="input('ExampleModel')" type="button">ExampleModel<img src="images/bar-chart-icon.png"></button>
+		<button onclick="input('Affordable')" type="button">Affordable<img src="images/coin-icon.png"></button>
     </div>
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 	<script>
@@ -27,7 +27,6 @@
 				.enter().append("div")
     		.attr("height", "20px")
 			.attr("class", "sliders")
-			.attr("z-index", "99999")
 			.call(d3.slider().on("slide", function(evt, value) {
 					d3.select('#inputvalue').text(value);
 			}));
@@ -44,7 +43,7 @@
 
 	<div>
      <h1> 3. Run the model: </h1>
-	<button onclick="output()" type="button">Run</button>
+	<button id="run-button" onclick="output()" type="button">Run</button>
 </div>
 <div>
      <h1> 4. Review the output: </h1>
