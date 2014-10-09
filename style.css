@@ -2,13 +2,12 @@
 .body #footer { width: 100%; }
 
 .body {
-background-image: #FFFFFF url('images/background.png') center center fixed;
+background: #FFFFFF url('images/background.png') center center fixed;
 background-repeat: no-repeat;
 -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-background-size: 100% cover;
 font-family: 'Oxygen', Helvetica, Verdana, Arial;
 }
 
@@ -18,9 +17,11 @@ font-family: 'Oxygen', Helvetica, Verdana, Arial;
 background-color: #000000;
 color: #FFFFFF;
 font-family: 'Oxygen', serif;
-margin: 10px;
+margin: 10px 80px;
+opacity: 0.8;
 padding: 10px;
 border-radius:5px;
+text-align:center;
 }
 
 #header a {
@@ -37,6 +38,7 @@ opacity: 0.8;
 border-radius: 5px;
 color: white;
 width: 700px;
+text-align:center;
 }
 
 #footer {
