@@ -98,24 +98,39 @@ def process(function, dictionary):
 def output(model=None):
     if model is None:
         return jsonify({
+            'success': False,
             'error': 'model not provided -- use /output/model_name',
             'known models': models.keys()
             })
     elif model not in models:
         return jsonify({
+            'success': False,
             'error': 'unknown model:{0}'.format(model),
             'known models': models.keys()
             })
     
     #6. run model with data
     model_file = models[model]
-    cmd = 'python {0} work {1}'.format("models/{0}".format(model_file), ' '.join(request.args.values()))
-    output = os.popen(cmd).read().strip()
+    args = ""
+    for key in request.args:
+        args+=key + " " + request.args[key] + " "
+    cmd = 'python {0} work {1}'.format("models/{0}".format(model_file), args)
+    try:
+        output = os.popen(cmd).read().strip()
+        objects = {'charts':json.loads(output)}
     
-    #7. give data back to gui
-    return jsonify({"cmd":cmd,"output":output})
+        #7. give data back to gui
+        objects['cmd'] = cmd
+        objects['success'] = True
+        return jsonify(objects)
+    except Exception as e:
+        return jsonify({'success':False, 
+                        'requests':request.args,
+                        'cmd':cmd,
+                        'exception': str(e),
+                        'output':output})
 
 port = os.getenv('VCAP_APP_PORT', '5000')
 if __name__ == '__main__':
-    #app.debug = True
+    app.debug = True
     app.run(host='0.0.0.0', port=int(port))

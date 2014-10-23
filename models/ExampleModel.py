@@ -45,96 +45,59 @@ def request():
 						"rectangles":[]})
     
 def work(data):
-    """
-    Run the model with the supplied data. This simple models
-    assumes call volume will increase linearly for the next
-    10 weeks.
-    """
-    return json.dumps({
-					"type": "serial",
-					"pathToImages": "http://cdn.amcharts.com/lib/3/images/",
-					"categoryField": "category",
-					"startDuration": 1,
-					"categoryAxis": {
-						"gridPosition": "start"
+	"""
+	Run the model with the supplied data. This simple models
+	assumes call volume will increase linearly for the next
+	10 weeks.
+	"""
+	cleaned = {}
+	for d in range(0,len(data),2):
+		cleaned[data[d]] = data[d+1]
+
+	output = [{	"name": "ExampleChart", 
+				"type": "serial",
+				"pathToImages": "http://cdn.amcharts.com/lib/3/images/",
+				"categoryField": "category",
+				"startDuration": 1,
+				"categoryAxis": {
+					"gridPosition": "start"
+				},
+				"trendLines": [],
+				"graphs": [
+					{
+						"balloonText": "Slider [[category]] is at [[value]]",
+						"bullet": "round",
+						"id": "AmGraph-1",
+						"title": "Example Graph",
+						"type": "smoothedLine",
+						"valueField": "column-1"
 					},
-					"trendLines": [],
-					"graphs": [
-						{
-							"balloonText": "[[title]] of [[category]]:[[value]]",
-							"bullet": "round",
-							"id": "AmGraph-1",
-							"title": "graph 1",
-							"type": "smoothedLine",
-							"valueField": "column-1"
-						},
-						{
-							"balloonText": "[[title]] of [[category]]:[[value]]",
-							"bullet": "square",
-							"id": "AmGraph-2",
-							"title": "graph 2",
-							"type": "smoothedLine",
-							"valueField": "column-2"
-						}
-					],
-					"guides": [],
-					"valueAxes": [
-						{
-							"id": "ValueAxis-1",
-							"title": "Axis title"
-						}
-					],
-					"allLabels": [],
-					"balloon": {},
-					"legend": {
-						"useGraphSettings": True
-					},
-					"titles": [
-						{
-							"id": "Title-1",
-							"size": 15,
-							"text": "Chart Title"
-						}
-					],
-					"dataProvider": [
-						{
-							"category": "category 1",
-							"column-1": 8,
-							"column-2": 5
-						},
-						{
-							"category": "category 2",
-							"column-1": "3",
-							"column-2": 7
-						},
-						{
-							"category": "category 3",
-							"column-1": "0",
-							"column-2": 3
-						},
-						{
-							"category": "category 4",
-							"column-1": 1,
-							"column-2": 3
-						},
-						{
-							"category": "category 5",
-							"column-1": 2,
-							"column-2": 1
-						},
-						{
-							"category": "category 6",
-							"column-1": 3,
-							"column-2": 2
-						},
-						{
-							"category": "category 7",
-							"column-1": 6,
-							"column-2": 8
-						}
-					]
-				}
-		)
+				],
+				"guides": [],
+				"valueAxes": [
+					{
+						"id": "ValueAxis-1",
+						"title": "Slider Value"
+					}
+				],
+				"allLabels": [],
+				"balloon": {},
+				"legend": {
+					"useGraphSettings": True
+				},
+				"titles": [
+					{
+						"id": "Slider value",
+						"size": 15,
+						"text": "Slider Values"
+					}
+				]
+		}]
+	data_provider = [ { "category": "variable " + k,
+					 "column-1":cleaned[k]} for k in cleaned]
+	output[0]["dataProvider"] = data_provider
+	return json.dumps(output)
+		
 
 #these are necessary for calling the Model from the command line
 try:
