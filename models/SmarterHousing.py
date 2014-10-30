@@ -77,7 +77,7 @@ outputs = ['total_taxes',
 			 'Housing_Units[High_Income]',
 			# 'total_expenditures', # <-- this one didn't work!
 			 ]
-steps = 2 #1600	# number of time steps #this doesn't seem to matter
+steps = 1 #1600	# number of time steps #this doesn't seem to matter
 
 
 #what do the graphs look like?
@@ -109,8 +109,8 @@ def work(args):
     #convert data
     data = {}
     for d in range(0,len(args),2):
-      data[inputs[d/2]['entity']] = args[d+1]#DEBUG with fake values
-      #data[args[d]] = args[d+1]
+      #data[inputs[d/2]['entity']] = args[d+1]#DEBUG with fake values
+      data[args[d]] = args[d+1]
     if len(data) != len(inputs): # only except one value per parameter
       raise ValueError, "need to supply exactly "+str(len(inputs))+" inputs. Got "+str(len(data))
 	
@@ -122,6 +122,10 @@ def work(args):
     response = opener.open(query)
     read = response.read()
     dictionary = json.loads(read)
+
+    #print "========INIT========="
+    #print "dictionary", dictionary
+    #print "query", query
     if not dictionary['success']:
       raise Exception, dictionary+" : in INITIALIZE"
 			
@@ -133,6 +137,9 @@ def work(args):
     response = opener.open(query)
     read = response.read()
     dictionary = json.loads(read)
+    #print "========INPUT========="
+    #print "dictionary", dictionary
+    #print "query", query
     if not dictionary['success']:
       raise Exception, dictionary	+" : in PASSING INPUT"
 		
@@ -142,6 +149,9 @@ def work(args):
       response = opener.open(query)
       read = response.read()
       dictionary = json.loads(read)
+      #print "========STEP", s, "========="
+      #print "dictionary", dictionary
+      #print "query", query
       if not dictionary['success']:
         raise Exception, dictionary+" : in RUN"
 				
@@ -153,6 +163,9 @@ def work(args):
     response = opener.open(query)
     read = response.read()
     dictionary = json.loads(read)
+    #print "========OUTPUT========="
+    #print "dictionary", dictionary
+    #print "query", query
     if not dictionary['success']:
       raise Exception, dictionary+" : in GRAB OUTPUT"
     
@@ -160,9 +173,7 @@ def work(args):
     #print "HERE 2"
     responses = json.loads(dictionary['response'])
     graphs = []
-    #print "HERE 2.1"
     graphs.append(make_housing_graph(responses))
-    #print "HERE 2.2"
     graphs.append(make_revenue_graph(responses))
 
     #stop the simulation
@@ -171,11 +182,14 @@ def work(args):
     response = opener.open(query)
     read = response.read()
     dictionary = json.loads(read)
+    #print "========STOP IT========="
+    #print "dictionary", dictionary
+    #print "query", query
     if not dictionary['success']:
       raise Exception, dictionary+" : in STOP"
 
     #finish
-    #print "FINISH", graphs
+    #print "=======FINISH======="
     return json.dumps(graphs)
   except Exception as e:
     raise e
@@ -322,6 +336,12 @@ def make_revenue_graph(responses):
   return graph
 
 #SCRIPT STARTS HERE#
+"""
+Example work command:
+
+python models/SmarterHousing.py work 'percent_by_income[Low_Income]' 16.67 'percent_by_income[Extremely_Low_Income]' 16.67 'Housing_Units[Moderate_Income]' 1000 'Housing_Units[Middle_Income]' 1000 'percent_by_income[Middle_Income]' 16.67 'percent_by_income[Moderate_Income]' 16.67 'percent_by_income[Very_Low_Income]' 16.67 'Housing_Units[High_Income]' 1000 'Housing_Units[Very_Low_Income]' 1000 'Housing_Units[Low_Income]' 1000 'percent_by_income[High_Income]' 16.67 'Housing_Units[Extremely_Low_Income]' 1000
+
+"""
 try:
 	action = sys.argv[1]		 
 	if action == 'request':
