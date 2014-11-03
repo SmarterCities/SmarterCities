@@ -14,7 +14,7 @@ from flask_cors import CORS
 app = Flask(__name__)
 cors = CORS(app)
 
-models = {"ExampleModel":"ExampleModel.py", "SmarterHousing":"SmarterHousing.py"}
+models = {"ExampleModel":"ExampleModel.py", "SmarterHousing":"SmarterHousing.py", "311Messages":"311Messages.py"}
 
 @app.route("/")
 #@cross_origin()
@@ -75,14 +75,10 @@ def input_(model=None):
         
 
     #3.2 build button objects
-    objects["buttons"] = {}
-    if "buttons" in inputs:
-        for button in inputs["buttons"]:
-            continue   # not implemented yet....
-        
+    objects["buttons"] = inputs["buttons"]
+
     #3.3 build rectangle objections
-    if "rectangles" in inputs:
-        objects["rectangle"] = inputs["rectangles"]
+    objects["entries"] = inputs["entries"]
 
     #4. return input objects to GUI
     return jsonify(objects)
@@ -117,7 +113,7 @@ def output(model=None):
     cmd = 'python {0} work {1}'.format("models/{0}".format(model_file), args)
     try:
         output = os.popen(cmd).read().strip()
-        objects = {'charts':json.loads(output)}
+        objects = {'output':json.loads(output)}
     
         #7. give data back to gui
         objects['cmd'] = cmd
@@ -132,5 +128,5 @@ def output(model=None):
 
 port = os.getenv('VCAP_APP_PORT', '5000')
 if __name__ == '__main__':
-    app.debug = True
+    #app.debug = True
     app.run(host='0.0.0.0', port=int(port))

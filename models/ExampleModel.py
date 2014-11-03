@@ -42,6 +42,7 @@ def request():
                                    "value":15},
                                    ],
                         "buttons":[],
+                        "entries":[],
 						"rectangles":[]})
     
 def work(data):
@@ -54,7 +55,7 @@ def work(data):
 	for d in range(0,len(data),2):
 		cleaned[data[d]] = data[d+1]
 
-	output = [{	"name": "ExampleChart", 
+	charts = [{	"name": "ExampleChart", 
 				"type": "serial",
 				"pathToImages": "http://cdn.amcharts.com/lib/3/images/",
 				"categoryField": "category",
@@ -95,8 +96,8 @@ def work(data):
 		}]
 	data_provider = [ { "category": "variable " + k,
 					 "column-1":cleaned[k]} for k in cleaned]
-	output[0]["dataProvider"] = data_provider
-	return json.dumps(output)
+	charts[0]["dataProvider"] = data_provider
+	return json.dumps({"amCharts":charts, "maps":[]})
 		
 
 #these are necessary for calling the Model from the command line

@@ -95,6 +95,7 @@ def request():
 									 'max':i['max'],
 									 'value':i['currentValue']} for i in inputs],
 						 "buttons":[],
+             "entries":[],
 						 "rectangles":[{"upper_left":[40.795296, -73.968362],
 										"lower_right":[40.80, -73.97]}],
 										"color":"blue" })
@@ -190,7 +191,7 @@ def work(args):
 
     #finish
     #print "=======FINISH======="
-    return json.dumps(graphs)
+    return json.dumps({"amCharts":graphs})
   except Exception as e:
     raise e
     return json.dumps({
@@ -339,7 +340,7 @@ def make_revenue_graph(responses):
 """
 Example work command:
 
-python models/SmarterHousing.py work 'percent_by_income[Low_Income]' 16.67 'percent_by_income[Extremely_Low_Income]' 16.67 'Housing_Units[Moderate_Income]' 1000 'Housing_Units[Middle_Income]' 1000 'percent_by_income[Middle_Income]' 16.67 'percent_by_income[Moderate_Income]' 16.67 'percent_by_income[Very_Low_Income]' 16.67 'Housing_Units[High_Income]' 1000 'Housing_Units[Very_Low_Income]' 1000 'Housing_Units[Low_Income]' 1000 'percent_by_income[High_Income]' 16.67 'Housing_Units[Extremely_Low_Income]' 1000
+python models/SmarterHousing.py work percent_by_income[Low_Income] 16.67 percent_by_income[Extremely_Low_Income] 16.67 Housing_Units[Moderate_Income] 1000 Housing_Units[Middle_Income] 1000 percent_by_income[Middle_Income] 16.67 percent_by_income[Moderate_Income] 16.67 percent_by_income[Very_Low_Income] 16.67 Housing_Units[High_Income] 1000 Housing_Units[Very_Low_Income] 1000 Housing_Units[Low_Income] 1000 percent_by_income[High_Income] 16.67 Housing_Units[Extremely_Low_Income] 1000
 
 """
 try:
