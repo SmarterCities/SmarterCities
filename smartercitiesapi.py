@@ -14,7 +14,7 @@ from flask_cors import CORS
 app = Flask(__name__)
 cors = CORS(app)
 
-models = {"ExampleModel":"ExampleModel.py", "SmarterHousing":"SmarterHousing.py", "311Messages":"311Messages.py"}
+models = {"ExampleModel":"ExampleModel.py", "SmarterHousing":"SmarterHousing.py", "311Messages":"311Messages.py", "CityPulse":"CityPulse.py"}
 
 @app.route("/")
 #@cross_origin()
@@ -48,11 +48,12 @@ def input_(model=None):
     except ValueError:
         return jsonify({
             'error': 'received non-JSON response from model',
+            'cmd':cmd,
             'response':model_response
         })
     
     #3. Build objects dictionary for data
-    objects = {"model":model, "success":True}
+    objects = {"model":model, "success":True, "cmd":cmd,"model_response":model_response}
     
     #3.1 build slider objects
     objects["sliders"] = []
@@ -75,10 +76,22 @@ def input_(model=None):
         
 
     #3.2 build button objects
-    objects["buttons"] = inputs["buttons"]
+    if "buttons" in inputs:
+        objects["buttons"] = inputs["buttons"]
+    else:
+        objects["buttons"] = []
 
     #3.3 build rectangle objections
-    objects["entries"] = inputs["entries"]
+    if "entries" in inputs:
+        objects["entries"] = inputs["entries"]
+    else:
+        objects["entries"] = []
+
+    #3.4 build dropdown objects
+    if "dropdowns" in inputs:
+        objects["dropdowns"] = inputs["dropdowns"]
+    else:
+        objects["dropdowns"] = []
 
     #4. return input objects to GUI
     return jsonify(objects)
@@ -113,7 +126,17 @@ def output(model=None):
     cmd = 'python {0} work {1}'.format("models/{0}".format(model_file), args)
     try:
         output = os.popen(cmd).read().strip()
-        objects = {'output':json.loads(output)}
+        output = json.loads(output)
+
+        #make sure returned output has all the required stuff
+        if "amCharts" not in output:
+            output["amCharts"] = []
+        if "maps" not in output:
+            output["maps"] = []
+        if "text" not in output:
+            output["text"] = []
+        objects = {'output': output}
+
     
         #7. give data back to gui
         objects['cmd'] = cmd

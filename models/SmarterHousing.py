@@ -191,7 +191,7 @@ def work(args):
 
     #finish
     #print "=======FINISH======="
-    return json.dumps({"amCharts":graphs})
+    return json.dumps({"amCharts":graphs, "maps":[]})
   except Exception as e:
     raise e
     return json.dumps({
