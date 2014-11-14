@@ -26,7 +26,7 @@ def work(data):
 		raise ValueError, "incorrent data returned:" + str(data)
 
 	#build map based on pulse value
-	if data[1] == "MTATurnstyle":
+	if data[1] == "Craigs List":
 		pass
 
 

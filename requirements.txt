@@ -1,3 +1,4 @@
 Flask==0.10.1
 flask-cors==1.9.0
 requests==2.4.3
+numpy>=1.7.1

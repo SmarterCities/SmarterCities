@@ -93,6 +93,12 @@ def input_(model=None):
     else:
         objects["dropdowns"] = []
 
+    #3.5 build labels
+    if "labels" in inputs:
+        objects["labels"] = inputs["labels"]
+    else:
+        objects["labels"] = []
+
     #4. return input objects to GUI
     return jsonify(objects)
 

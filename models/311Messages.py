@@ -10,6 +10,8 @@ Model for getting 311 calls within a certain area.
 import sys
 import json
 import requests
+import time
+import numpy as np
 
 def request():
     """
@@ -20,42 +22,85 @@ def request():
     """    
     #If I know the values for the sliders / button a priori
     #then I can supply a JSON object like this:
-    return json.dumps({"sliders":[{"min":0,
-                                   "max":5000,
-                                   "name":"Radius",
-                                   "value":1000},
-                                   ],
-                        "entries":[{"name":"Latitude"},
-                        		   {"name":"Longitude"}],
+    return json.dumps({"sliders":[],
+                        "entries":[],
                         "buttons":[],
-						"rectangles":[]})
+						"rectangles":[],
+						"labels":["No input parameters -- just press run!"]})
     
 def work(data):
 	"""
-	Run the model with the supplied data. This simple models
-	assumes call volume will increase linearly for the next
-	10 weeks.
+	For each zip code, return a circle with epidemic intensity and 
+	a marker for the request type.
 	"""
-	cleaned = {}
-	for d in range(0,len(data),2):
-		cleaned[data[d]] = data[d+1]
+	#1. build data set
+	days = [time.strftime("%Y-%m-%dT00:00:00", time.localtime(time.time() - (24*60*60*d))) for d in range(2,9)]
+	data = {}
+	for index, day in enumerate(days):
+		#print "Running ", "http://data.cityofnewyork.us/resource/erm2-nwe9.json?created_date={0}".format(day)
+		r = requests.get("http://data.cityofnewyork.us/resource/erm2-nwe9.json?created_date={0}".format(day))
+		#print "Number of responses: ", len(r.json())
+		
+		for service_request in r.json():
+			#grab relevant data
+			try:
+				zip_code = service_request["incident_zip"]
+				incident_type = service_request["complaint_type"]
+			except KeyError:
+				#I can't do anything with this service request
+				#print "  skipping..."
+				continue
 
-	#make an API call and build map items
-	r = requests.get("http://data.cityofnewyork.us/resource/erm2-nwe9.json?created_date=2014-10-31T00:00:00&$where=within_circle(location,{0},{1},{2})".format(cleaned["Latitude"], cleaned["Longitude"], cleaned["Radius"]))
+			#add zip if we haven't seen it yet
+			if zip_code not in data:
+				data[zip_code] = {}
+				data[zip_code]["incidents"] = {}
+				data[zip_code]["lat"] = float(service_request["latitude"])
+				data[zip_code]["lon"] = float(service_request["longitude"])
+
+			#add incident if doesn't exist
+			if incident_type not in data[zip_code]["incidents"]:
+				data[zip_code]["incidents"][incident_type] = {i:0 for i in range(7)}
+			
+			#tally incident type
+			data[zip_code]["incidents"][incident_type][index]+=1
+
+	#2. analyze data for increasing request
+	#print "=====ANAYLZE DATA=========="
+	for zip_code in data:
+		#print "zip code", zip_code
+		data[zip_code]["incident"] = None
+		data[zip_code]["value"] = -np.inf
+		for incident_type in data[zip_code]["incidents"]:
+			#print "    incident type", incident_type
+			#print "    data[z][incident][i]", data[zip_code]["incidents"][incident_type]
+			#print
+			x = range(7)
+			y = [data[zip_code]["incidents"][incident_type][d] for d in range(7)]
+			slope, intercept = np.polyfit(x,y,1)
+
+			if slope > data[zip_code]["value"]:
+				data[zip_code]["value"] = slope
+				data[zip_code]["incident"] = incident_type
+
+	#3. build maps from data
 	map_ = {}
 	map_["name"] = "311ServiceRequests"
-	map_["view"] = {"lat":cleaned["Latitude"], "lon":cleaned["Longitude"], "zoom":13}
-	map_["markers"] = [ {"lat":sr["latitude"], 
-						 "lon":sr["longitude"],
-						 "text":sr["complaint_type"]} for sr in r.json()]
-	map_["circles"] = [ {"lat":cleaned["Latitude"], 
-						 "lon":cleaned["Longitude"], 
-						 "radius":cleaned["Radius"],
-						 "color":"red",
-						 "fillColor": '#f03',
-				    	 "fillOpacity": 0.5} ]
+	map_["view"] = {"lat":40.750254, "lon":-73.987339, "zoom":13}
+	map_["circles"] = []
+	map_["markers"] = []
+	for zip_code in data:
+		map_["circles"].append({"lat":data[zip_code]["lat"], 
+				 				"lon":data[zip_code]["lon"], 
+								"radius":500,
+								"color":["blue","red"][data[zip_code]["value"]>1.0],
+								"fillColor": ["blue","red"][data[zip_code]["value"]>1.0],
+								"fillOpacity": 0.5})
+		map_["markers"].append({"lat":data[zip_code]["lat"], 
+								 "lon":data[zip_code]["lon"],
+								 "text":data[zip_code]["incident"]+"\n"+str(data[zip_code]["value"])})
 
-	return json.dumps({"amCharts":[], "maps":[map_]})
+	return json.dumps({"maps":[map_]})
 
 #these are necessary for calling the Model from the command line
 """
