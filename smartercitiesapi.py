@@ -4,7 +4,6 @@ API for SmarterCities application.
 
 """
 
-import sys
 import os
 import json
 import urllib2
@@ -39,7 +38,7 @@ def input_(model=None):
             'known models': models.keys()
             })
             
-    #2. request data needs from bob
+    #2. request data needs from model
     model_file = models[model]
     cmd = 'python {0} request'.format("models/{0}".format(model_file))
     model_response = os.popen(cmd).read().strip()
